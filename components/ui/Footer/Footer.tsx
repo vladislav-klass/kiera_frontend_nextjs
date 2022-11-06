@@ -14,7 +14,7 @@ export default function Footer() {
               <span className="rounded-full border border-zinc-700 mr-2">
                 <Logo />
               </span>
-              <span>ACME</span>
+              <span>Kiera.ai</span>
             </a>
           </Link>
         </div>
@@ -27,27 +27,27 @@ export default function Footer() {
                 </a>
               </Link>
             </li>
-            <li className="py-3 md:py-0 md:pb-4">
+            {/* <li className="py-3 md:py-0 md:pb-4">
               <Link href="/">
                 <a className="text-white hover:text-zinc-200 transition ease-in-out duration-150">
                   About
                 </a>
               </Link>
-            </li>
-            <li className="py-3 md:py-0 md:pb-4">
+            </li> */}
+            {/* <li className="py-3 md:py-0 md:pb-4">
               <Link href="/">
                 <a className="text-white hover:text-zinc-200 transition ease-in-out duration-150">
                   Careers
                 </a>
               </Link>
-            </li>
-            <li className="py-3 md:py-0 md:pb-4">
+            </li> */}
+            {/* <li className="py-3 md:py-0 md:pb-4">
               <Link href="/">
                 <a className="text-white hover:text-zinc-200 transition ease-in-out duration-150">
                   Blog
                 </a>
               </Link>
-            </li>
+            </li> */}
           </ul>
         </div>
         <div className="col-span-1 lg:col-span-2">

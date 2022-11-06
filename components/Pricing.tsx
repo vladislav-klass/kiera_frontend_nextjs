@@ -71,91 +71,106 @@ export default function Pricing({ products }: Props) {
       <div className="max-w-6xl mx-auto py-8 sm:py-24 px-4 sm:px-6 lg:px-8">
         <div className="sm:flex sm:flex-col sm:align-center">
           <h1 className="text-4xl font-extrabold text-white sm:text-center sm:text-6xl">
-            Pricing Plans
+            Control your terminal with natural language
           </h1>
+
+          {/* Embed a gif with padding above and below*/}
+          <div className="flex justify-center">
+            <img
+              className="mt-8 mb-8"
+              src="https://github.com/tom-doerr/bins/raw/main/zsh_codex/zc4.gif"
+              alt="Terminal"
+            />
+          </div>
+
           <p className="mt-5 text-xl text-zinc-200 sm:text-center sm:text-2xl max-w-2xl m-auto">
-            Start building for free, then add a site plan to go live. Account
-            plans unlock additional features.
+            Kiera is a ZSH plugin that enables you to use OpenAI's powerful Codex AI in the zsh command line.
+            OpenAI Codex is the AI that also powers GitHub Copilot.
           </p>
           <div className="relative self-center mt-6 bg-zinc-900 rounded-lg p-0.5 flex sm:mt-8 border border-zinc-800">
             <button
               onClick={() => setBillingInterval('month')}
               type="button"
-              className={`${
-                billingInterval === 'month'
-                  ? 'relative w-1/2 bg-zinc-700 border-zinc-800 shadow-sm text-white'
-                  : 'ml-0.5 relative w-1/2 border border-transparent text-zinc-400'
-              } rounded-md m-1 py-2 text-sm font-medium whitespace-nowrap focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-opacity-50 focus:z-10 sm:w-auto sm:px-8`}
+              className={`${billingInterval === 'month'
+                ? 'relative w-1/2 bg-zinc-700 border-zinc-800 shadow-sm text-white'
+                : 'ml-0.5 relative w-1/2 border border-transparent text-zinc-400'
+                } rounded-md m-1 py-2 text-sm font-medium whitespace-nowrap focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-opacity-50 focus:z-10 sm:w-auto sm:px-8`}
             >
               Monthly billing
             </button>
             <button
               onClick={() => setBillingInterval('year')}
               type="button"
-              className={`${
-                billingInterval === 'year'
-                  ? 'relative w-1/2 bg-zinc-700 border-zinc-800 shadow-sm text-white'
-                  : 'ml-0.5 relative w-1/2 border border-transparent text-zinc-400'
-              } rounded-md m-1 py-2 text-sm font-medium whitespace-nowrap focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-opacity-50 focus:z-10 sm:w-auto sm:px-8`}
+              className={`${billingInterval === 'year'
+                ? 'relative w-1/2 bg-zinc-700 border-zinc-800 shadow-sm text-white'
+                : 'ml-0.5 relative w-1/2 border border-transparent text-zinc-400'
+                } rounded-md m-1 py-2 text-sm font-medium whitespace-nowrap focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-opacity-50 focus:z-10 sm:w-auto sm:px-8`}
             >
               Yearly billing
             </button>
           </div>
         </div>
-        <div className="mt-12 space-y-4 sm:mt-16 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-6 lg:max-w-4xl lg:mx-auto xl:max-w-none xl:mx-0 xl:grid-cols-4">
-          {products.map((product) => {
-            const price = product?.prices?.find(
-              (price) => price.interval === billingInterval
-            );
-            if (!price) return null;
-            const priceString = new Intl.NumberFormat('en-US', {
-              style: 'currency',
-              currency: price.currency,
-              minimumFractionDigits: 0
-            }).format((price?.unit_amount || 0) / 100);
-            return (
-              <div
-                key={product.id}
-                className={cn(
-                  'rounded-lg shadow-sm divide-y divide-zinc-600 bg-zinc-900',
-                  {
-                    'border border-pink-500': subscription
-                      ? product.name === subscription?.prices?.products?.name
-                      : product.name === 'Freelancer'
-                  }
-                )}
-              >
-                <div className="p-6">
-                  <h2 className="text-2xl leading-6 font-semibold text-white">
-                    {product.name}
-                  </h2>
-                  <p className="mt-4 text-zinc-300">{product.description}</p>
-                  <p className="mt-8">
-                    <span className="text-5xl font-extrabold white">
-                      {priceString}
-                    </span>
-                    <span className="text-base font-medium text-zinc-100">
-                      /{billingInterval}
-                    </span>
-                  </p>
-                  <Button
-                    variant="slim"
-                    type="button"
-                    disabled={isLoading}
-                    loading={priceIdLoading === price.id}
-                    onClick={() => handleCheckout(price)}
-                    className="mt-8 block w-full rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-zinc-900"
-                  >
-                    {product.name === subscription?.prices?.products?.name
-                      ? 'Manage'
-                      : 'Subscribe'}
-                  </Button>
+        <div className="mt-12 space-y-4 sm:mt-16 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-6 lg:max-w-4xl lg:mx-auto xl:max-w-none xl:mx-0 xl:grid-cols-2">
+          {products
+            // TODO: Sort products by price
+            // .sort((a, b) => {
+            //   if (a.price.unit_amount < b.price.unit_amount) return -1;
+            //   if (a.price.unit_amount > b.price.unit_amount) return 1;
+            //   return 0;
+            // })
+            .map((product) => {
+              const price = product?.prices?.find(
+                (price) => price.interval === billingInterval
+              );
+              if (!price) return null;
+              const priceString = new Intl.NumberFormat('en-US', {
+                style: 'currency',
+                currency: price.currency,
+                minimumFractionDigits: 0
+              }).format((price?.unit_amount || 0) / 100);
+              return (
+                <div
+                  key={product.id}
+                  className={cn(
+                    'rounded-lg shadow-sm divide-y divide-zinc-600 bg-zinc-900',
+                    {
+                      'border border-pink-500': subscription
+                        ? product.name === subscription?.prices?.products?.name
+                        : product.name === 'Freelancer'
+                    }
+                  )}
+                >
+                  <div className="p-6">
+                    <h2 className="text-2xl leading-6 font-semibold text-white">
+                      {product.name}
+                    </h2>
+                    <p className="mt-4 text-zinc-300">{product.description}</p>
+                    <p className="mt-8">
+                      <span className="text-5xl font-extrabold white">
+                        {priceString}
+                      </span>
+                      <span className="text-base font-medium text-zinc-100">
+                        /{billingInterval}
+                      </span>
+                    </p>
+                    <Button
+                      variant="slim"
+                      type="button"
+                      disabled={isLoading}
+                      loading={priceIdLoading === price.id}
+                      onClick={() => handleCheckout(price)}
+                      className="mt-8 block w-full rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-zinc-900"
+                    >
+                      {product.name === subscription?.prices?.products?.name
+                        ? 'Manage'
+                        : 'Subscribe'}
+                    </Button>
+                  </div>
                 </div>
-              </div>
-            );
-          })}
+              );
+            })}
         </div>
-        <div>
+        {/* <div>
           <p className="mt-24 text-xs uppercase text-zinc-400 text-center font-bold tracking-[0.3em]">
             Brought to you by
           </p>
@@ -169,6 +184,7 @@ export default function Pricing({ products }: Props) {
                 />
               </a>
             </div>
+
             <div className="flex items-center justify-start">
               <a href="https://vercel.com" aria-label="Vercel.com Link">
                 <img
@@ -206,7 +222,7 @@ export default function Pricing({ products }: Props) {
               </a>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );
