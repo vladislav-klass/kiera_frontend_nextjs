@@ -82,21 +82,19 @@ const SignIn = () => {
             <Logo width="64px" height="64px" />
           </div>
           <div className="flex flex-col space-y-4">
-            {message.content && (
+            {/* {message.content && (
               <div
-                className={`${
-                  message.type === 'error' ? 'text-pink-500' : 'text-green-500'
-                } border ${
-                  message.type === 'error'
+                className={`${message.type === 'error' ? 'text-pink-500' : 'text-green-500'
+                  } border ${message.type === 'error'
                     ? 'border-pink-500'
                     : 'border-green-500'
-                } p-3`}
+                  } p-3`}
               >
                 {message.content}
               </div>
-            )}
+            )} */}
 
-            {!showPasswordInput && (
+            {/* {!showPasswordInput && (
               <form onSubmit={handleSignin} className="flex flex-col space-y-4">
                 <Input
                   type="email"
@@ -114,9 +112,9 @@ const SignIn = () => {
                   Send magic link
                 </Button>
               </form>
-            )}
+            )} */}
 
-            {showPasswordInput && (
+            {/* {showPasswordInput && (
               <form onSubmit={handleSignin} className="flex flex-col space-y-4">
                 <Input
                   type="email"
@@ -142,9 +140,9 @@ const SignIn = () => {
                   Sign in
                 </Button>
               </form>
-            )}
+            )} */}
 
-            <span className="pt-1 text-center text-sm">
+            {/* <span className="pt-1 text-center text-sm">
               <a
                 href="#"
                 className="text-zinc-200 text-accent-9 hover:underline cursor-pointer"
@@ -158,9 +156,9 @@ const SignIn = () => {
                   showPasswordInput ? 'magic link' : 'password'
                 }.`}
               </a>
-            </span>
+            </span> */}
 
-            <span className="pt-1 text-center text-sm">
+            {/* <span className="pt-1 text-center text-sm">
               <span className="text-zinc-200">Don't have an account?</span>
               {` `}
               <Link href="/signup">
@@ -168,10 +166,10 @@ const SignIn = () => {
                   Sign up.
                 </a>
               </Link>
-            </span>
+            </span> */}
           </div>
 
-          <div className="flex items-center my-6">
+          {/* <div className="flex items-center my-6">
             <div
               className="border-t border-zinc-600 flex-grow mr-3"
               aria-hidden="true"
@@ -181,7 +179,7 @@ const SignIn = () => {
               className="border-t border-zinc-600 flex-grow ml-3"
               aria-hidden="true"
             ></div>
-          </div>
+          </div> */}
 
           <Button
             variant="slim"
