@@ -105,7 +105,7 @@ const SignUp = () => {
             {` `}
             <Link href="/signin">
               <a className="text-accent-9 font-bold hover:underline cursor-pointer">
-                Sign in.
+                Sign in
               </a>
             </Link>
           </span>
