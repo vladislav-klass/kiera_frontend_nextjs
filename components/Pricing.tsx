@@ -85,7 +85,9 @@ export default function Pricing({ products }: Props) {
 
           <p className="mt-5 text-xl text-zinc-200 sm:text-center sm:text-2xl max-w-2xl m-auto">
             Use OpenAI's powerful Codex AI in the command line with the zsh plugin Kiera.
-            Codex is the AI that also powers GitHub Copilot.
+            Codex is the AI that also powers GitHub Copilot. <br></br><br></br>
+
+            Try it out for free!
           </p>
 
 
