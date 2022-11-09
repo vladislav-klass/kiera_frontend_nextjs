@@ -84,9 +84,31 @@ export default function Pricing({ products }: Props) {
           </div>
 
           <p className="mt-5 text-xl text-zinc-200 sm:text-center sm:text-2xl max-w-2xl m-auto">
-            Kiera is a ZSH plugin that enables you to use OpenAI's powerful Codex AI in the zsh command line.
-            OpenAI Codex is the AI that also powers GitHub Copilot.
+            Use OpenAI's powerful Codex AI in the command line with the zsh plugin Kiera.
+            Codex is the AI that also powers GitHub Copilot.
           </p>
+
+
+          {/* provide installation instructions for pip */}
+          <div className="flex justify-center">
+            {/* add more padding vertically */}
+            <div className="mt-8 mb-8">
+              <p className="mt-5 text-xl text-zinc-200 sm:text-center sm:text-2xl max-w-2xl m-auto">
+                Install Kiera with pip:
+              </p>
+              <pre className="text-xl text-zinc-200 sm:text-center sm:text-2xl max-w-2xl m-auto">
+                <code>
+                  pip install kiera
+                </code>
+              </pre>
+              {/* add more padding */}
+              <p className="mt-5 text-xl text-zinc-200 sm:text-center sm:text-2xl max-w-2xl m-auto">
+                Any questions? <a className="text-pink-500 underline" href="info@kiera.ai">Contact us</a>
+              </p>
+            </div>
+          </div>
+          
+
           <div className="relative self-center mt-6 bg-zinc-900 rounded-lg p-0.5 flex sm:mt-8 border border-zinc-800">
             <button
               onClick={() => setBillingInterval('month')}
