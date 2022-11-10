@@ -50,7 +50,7 @@ export default function Footer() {
               </p>
             </li>
             <li className="py-3 md:py-0 md:pb-4">
-              <Link href="/">
+              <Link href="/privacypolicy">
                 <a className="text-white hover:text-zinc-200 transition ease-in-out duration-150">
                   Privacy Policy
                 </a>
