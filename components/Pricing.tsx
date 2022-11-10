@@ -1,5 +1,6 @@
 import cn from 'classnames';
 import { useRouter } from 'next/router';
+import Script from 'next/script'
 import { useState } from 'react';
 
 import Button from 'components/ui/Button';
@@ -7,6 +8,8 @@ import { postData } from 'utils/helpers';
 import { getStripe } from 'utils/stripe-client';
 import { useUser } from 'utils/useUser';
 import { Price, ProductWithPrice } from 'types';
+
+
 
 interface Props {
   products: ProductWithPrice[];
@@ -76,6 +79,8 @@ export default function Pricing({ products }: Props) {
 
           {/* Embed a gif with padding above and below*/}
           <div className="flex justify-center">
+            <Script src="https://asciinema.org/a/aMFGH8jU7O7uo94YZyWJEZtnO.js" />
+
             <img
               className="mt-8 mb-8"
               src="https://github.com/tom-doerr/bins/raw/main/zsh_codex/zc4.gif"
@@ -103,13 +108,26 @@ export default function Pricing({ products }: Props) {
                   pip install kiera
                 </code>
               </pre>
-              {/* add more padding */}
+
               <p className="mt-5 text-xl text-zinc-200 sm:text-center sm:text-2xl max-w-2xl m-auto">
+                Start using kiera with these examples in your command line:
+              </p>
+              <pre className="text-xl text-zinc-200 sm:text-center sm:text-2xl max-w-2xl m-auto">
+                <code>
+                  ka this is my first query <br></br>
+                  ka revert the last two commits <br></br>
+                  ka print all files created last week
+                </code>
+              </pre>
+
+
+              {/* add more padding */}
+              <p className="mt-16 text-xl text-zinc-200 sm:text-center sm:text-2xl max-w-2xl m-auto">
                 Any questions? <a className="text-pink-500 underline" href="info@kiera.ai">Contact us</a>
               </p>
             </div>
           </div>
-          
+
 
           <div className="relative self-center mt-6 bg-zinc-900 rounded-lg p-0.5 flex sm:mt-8 border border-zinc-800">
             <button
