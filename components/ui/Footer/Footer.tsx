@@ -26,14 +26,14 @@ export default function Footer() {
               </p>
             </li>
             <li className="py-3 md:py-0 md:pb-4">
-            <Link href="/">
+            <Link href="mailto:info@kiera.ai">
                 <a className="text-white hover:text-zinc-200 transition ease-in-out duration-150">
                   Contact
                 </a>
               </Link>
             </li>
             <li className="py-3 md:py-0 md:pb-4">
-              <Link href="/">
+              <Link href="/impressum">
                 <a className="text-white hover:text-zinc-200 transition ease-in-out duration-150">
                   Impressum
                 </a>
