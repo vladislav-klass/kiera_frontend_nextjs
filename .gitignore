@@ -38,3 +38,6 @@ yarn-error.log*
 package-lock.json
 .env.local.example
 .env
+
+# test pages
+pages/hide/

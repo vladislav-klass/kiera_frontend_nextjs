@@ -79,8 +79,6 @@ export default function Pricing({ products }: Props) {
 
           {/* Embed a gif with padding above and below*/}
           <div className="flex justify-center">
-            <Script src="https://asciinema.org/a/aMFGH8jU7O7uo94YZyWJEZtnO.js" />
-
             <img
               className="mt-8 mb-8"
               src="https://github.com/tom-doerr/bins/raw/main/zsh_codex/zc4.gif"
@@ -89,8 +87,8 @@ export default function Pricing({ products }: Props) {
           </div>
 
           <p className="mt-5 text-xl text-zinc-200 sm:text-center sm:text-2xl max-w-2xl m-auto">
-            Use OpenAI's powerful Codex AI in the command line with the zsh plugin Kiera.
-            Codex is the AI that also powers GitHub Copilot. <br></br><br></br>
+            Use your command line intuitively with natural language with Kiera.
+            Kiara works with OpenAI's powerful Codex AI which also powers GitHub Copilot. <br></br><br></br>
 
             Try it out for free!
           </p>
@@ -154,12 +152,6 @@ export default function Pricing({ products }: Props) {
         </div>
         <div className="mt-12 space-y-4 sm:mt-16 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-6 lg:max-w-4xl lg:mx-auto xl:max-w-none xl:mx-0 xl:grid-cols-2">
           {products
-            // TODO: Sort products by price
-            // .sort((a, b) => {
-            //   if (a.price.unit_amount < b.price.unit_amount) return -1;
-            //   if (a.price.unit_amount > b.price.unit_amount) return 1;
-            //   return 0;
-            // })
             .map((product) => {
               const price = product?.prices?.find(
                 (price) => price.interval === billingInterval
