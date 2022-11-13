@@ -8,6 +8,7 @@ import { postData } from 'utils/helpers';
 import { getStripe } from 'utils/stripe-client';
 import { useUser } from 'utils/useUser';
 import { Price, ProductWithPrice } from 'types';
+import { Script } from 'vm';
 
 
 
@@ -48,16 +49,14 @@ export default function Pricing({ products }: Props) {
     }
   }
 
-  const containerRef = useRef(null);
+  const containerRef = useRef<any>();
 
   useEffect(() => {
     const script = document.createElement('script')
-    // if (containerRef.current != null) {
-      script.id = "asciicast-aMFGH8jU7O7uo94YZyWJEZtnO",
-        script.src = "https://asciinema.org/a/aMFGH8jU7O7uo94YZyWJEZtnO.js?autoplay=1",
-        script.async = true,
-        containerRef.current.appendChild(script)
-    // }
+    script.id = "asciicast-aMFGH8jU7O7uo94YZyWJEZtnO",
+      script.src = "https://asciinema.org/a/aMFGH8jU7O7uo94YZyWJEZtnO.js?autoplay=1",
+      script.async = true,
+      containerRef.current.appendChild(script)
   }, []);
   ;
 
