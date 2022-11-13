@@ -52,12 +52,12 @@ export default function Pricing({ products }: Props) {
 
   useEffect(() => {
     const script = document.createElement('script')
-    if (containerRef.current != null) {
+    // if (containerRef.current != null) {
       script.id = "asciicast-aMFGH8jU7O7uo94YZyWJEZtnO",
         script.src = "https://asciinema.org/a/aMFGH8jU7O7uo94YZyWJEZtnO.js?autoplay=1",
         script.async = true,
         containerRef.current.appendChild(script)
-    }
+    // }
   }, []);
   ;
 
