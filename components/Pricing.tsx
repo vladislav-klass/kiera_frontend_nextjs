@@ -1,6 +1,6 @@
 import cn from 'classnames';
 import { useRouter } from 'next/router';
-import Script from 'next/script'
+import React, { useEffect, useRef } from 'react'
 import { useState } from 'react';
 
 import Button from 'components/ui/Button';
@@ -46,7 +46,20 @@ export default function Pricing({ products }: Props) {
     } finally {
       setPriceIdLoading(undefined);
     }
-  };
+  }
+
+  const containerRef = useRef(null)
+
+  useEffect(() => {
+    // append a button to the container
+
+    const script = document.createElement('script')
+    script.id = "asciicast-aMFGH8jU7O7uo94YZyWJEZtnO",
+      script.src = "https://asciinema.org/a/aMFGH8jU7O7uo94YZyWJEZtnO.js?autoplay=1",
+      script.async = true,
+      containerRef.current.appendChild(script)
+  }, []);
+  ;
 
   if (!products.length)
     return (
@@ -78,12 +91,7 @@ export default function Pricing({ products }: Props) {
           </h1>
 
           {/* Embed a gif with padding above and below*/}
-          <div className="flex justify-center">
-            <img
-              className="mt-8 mb-8"
-              src="https://github.com/tom-doerr/bins/raw/main/zsh_codex/zc4.gif"
-              alt="Terminal"
-            />
+          <div className="justify-center" ref={containerRef}>
           </div>
 
           <p className="mt-5 text-xl text-zinc-200 sm:text-center sm:text-2xl max-w-2xl m-auto">
@@ -95,7 +103,7 @@ export default function Pricing({ products }: Props) {
 
 
           {/* provide installation instructions for pip */}
-          <div className="flex justify-center">
+          <div className="justify-center">
             {/* add more padding vertically */}
             <div className="mt-8 mb-8">
               <p className="mt-5 text-xl text-zinc-200 sm:text-center sm:text-2xl max-w-2xl m-auto">
@@ -110,8 +118,8 @@ export default function Pricing({ products }: Props) {
               <p className="mt-5 text-xl text-zinc-200 sm:text-center sm:text-2xl max-w-2xl m-auto">
                 Start using kiera with these examples in your command line:
               </p>
-              <pre className="text-xl text-zinc-200 sm:text-center sm:text-2xl max-w-2xl m-auto">
-                <code>
+              <pre>
+                <code className="mt-5 text-xl text-zinc-200 sm:text-center sm:text-2xl max-w-2xl m-auto">
                   ka this is my first query <br></br>
                   ka revert the last two commits <br></br>
                   ka print all files created last week
