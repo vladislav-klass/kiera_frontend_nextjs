@@ -8,7 +8,6 @@ import { postData } from 'utils/helpers';
 import { getStripe } from 'utils/stripe-client';
 import { useUser } from 'utils/useUser';
 import { Price, ProductWithPrice } from 'types';
-import { Script } from 'vm';
 
 
 
@@ -116,8 +115,8 @@ export default function Pricing({ products }: Props) {
               </p>
               <pre>
                 <p className="text-center mt-5 text-xl text-zinc-200 sm:text-center sm:text-2xl max-w-2xl m-auto">
-                  ka this is my first query <br></br>
-                  ka revert the last two commits <br></br>
+                  ka show free memory <br></br>
+                  ka initialize git repository <br></br>
                   ka print all files created last week
                 </p>
               </pre>
