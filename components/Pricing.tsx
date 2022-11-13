@@ -123,7 +123,7 @@ export default function Pricing({ products }: Props) {
 
 
               <p className="mt-16 text-xl text-zinc-200 sm:text-center sm:text-2xl max-w-2xl m-auto">
-                Any questions? <a className="text-pink-500 underline" href="info@kiera.ai">Contact us</a>
+                Any questions? <a className="text-pink-500 underline" href="mailto:info@kiera.ai">Contact us</a>
               </p>
             </div>
           </div>
