@@ -111,7 +111,7 @@ export default function Pricing({ products }: Props) {
               </pre>
 
               <p className="mt-5 text-xl text-zinc-200 sm:text-center sm:text-2xl max-w-2xl m-auto">
-                After installing, start using Kiera with these examples in your command line:
+                After installing successfully try out:
               </p>
               <pre>
                 <p className="text-center mt-5 text-xl text-zinc-200 sm:text-center sm:text-2xl max-w-2xl m-auto">
