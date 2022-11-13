@@ -95,7 +95,7 @@ export default function Pricing({ products }: Props) {
           </div>
 
           <p className="mt-5 text-xl text-zinc-200 sm:text-center sm:text-2xl max-w-2xl m-auto">
-            Use your command line intuitively with natural language with Kiera.
+            Use your command line intuitively by typing in natural language.
             Kiara works with OpenAI's powerful Codex AI which also powers GitHub Copilot. <br></br><br></br>
 
             Try it out for free!
@@ -116,14 +116,14 @@ export default function Pricing({ products }: Props) {
               </pre>
 
               <p className="mt-5 text-xl text-zinc-200 sm:text-center sm:text-2xl max-w-2xl m-auto">
-                Start using kiera with these examples in your command line:
+                After installing, start using Kiera with these examples in your command line:
               </p>
               <pre>
-                <code className="mt-5 text-xl text-zinc-200 sm:text-center sm:text-2xl max-w-2xl m-auto">
+                <p className="text-center mt-5 text-xl text-zinc-200 sm:text-center sm:text-2xl max-w-2xl m-auto">
                   ka this is my first query <br></br>
                   ka revert the last two commits <br></br>
                   ka print all files created last week
-                </code>
+                </p>
               </pre>
 
 

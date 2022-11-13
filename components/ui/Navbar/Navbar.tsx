@@ -31,6 +31,9 @@ const Navbar = () => {
               <Link href="/account">
                 <a className={s.link}>Account</a>
               </Link>
+              <Link href="/pricing">
+                <a className={s.link}>Pricing</a>
+              </Link>
             </nav>
           </div>
 
