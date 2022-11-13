@@ -48,16 +48,16 @@ export default function Pricing({ products }: Props) {
     }
   }
 
-  const containerRef = useRef(null)
+  const containerRef = useRef(null);
 
   useEffect(() => {
-    // append a button to the container
-
     const script = document.createElement('script')
-    script.id = "asciicast-aMFGH8jU7O7uo94YZyWJEZtnO",
-      script.src = "https://asciinema.org/a/aMFGH8jU7O7uo94YZyWJEZtnO.js?autoplay=1",
-      script.async = true,
-      containerRef.current.appendChild(script)
+    if (containerRef.current != null) {
+      script.id = "asciicast-aMFGH8jU7O7uo94YZyWJEZtnO",
+        script.src = "https://asciinema.org/a/aMFGH8jU7O7uo94YZyWJEZtnO.js?autoplay=1",
+        script.async = true,
+        containerRef.current.appendChild(script)
+    }
   }, []);
   ;
 
