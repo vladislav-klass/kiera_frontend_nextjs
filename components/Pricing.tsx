@@ -53,8 +53,8 @@ export default function Pricing({ products }: Props) {
 
   useEffect(() => {
     const script = document.createElement('script')
-    script.id = "asciicast-aMFGH8jU7O7uo94YZyWJEZtnO",
-      script.src = "https://asciinema.org/a/aMFGH8jU7O7uo94YZyWJEZtnO.js?autoplay=1?preload=1?speed=2",
+    script.id = "asciicast-arXqnlaexWu7RfaBQodWpmXlO",
+      script.src = "https://asciinema.org/a/arXqnlaexWu7RfaBQodWpmXlO.js?autoplay=1?preload=1?speed=2",
       script.async = true,
       containerRef.current.appendChild(script)
   }, []);
