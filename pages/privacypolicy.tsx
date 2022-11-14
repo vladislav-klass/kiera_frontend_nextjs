@@ -24,7 +24,7 @@ const PrivacyPolicy = () => {
             <p>This document can be printed for reference by using the print command in the settings of any browser.</p>
             <h2><strong>Owner and Data Controller</strong></h2>
             <p>Kiera</p>
-            <p><strong>Owner contact email:</strong> stefan.m.frisch@gmail.com</p>
+            <p><strong>Owner contact email:</strong> info@kiera.ai</p>
             <h2><strong>Types of Data collected</strong></h2>
             <p>Among the types of Personal Data that Kiera collects, by itself or through third parties, there are: device
               information; Usage Data; email address; Data communicated while using the service; various types of Data; first
