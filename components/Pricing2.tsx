@@ -107,7 +107,7 @@ export default function Pricing({ products }: Props) {
           </div>
 
 
-          {[products[1]]
+          {[products[0]]
             .map((product) => {
               const price = product?.prices?.find(
                 (price) => price.interval === billingInterval

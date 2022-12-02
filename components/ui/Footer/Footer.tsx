@@ -68,7 +68,7 @@ export default function Footer() {
       </div>
       <div className="py-12 flex flex-col md:flex-row justify-between items-center space-y-4 bg-zinc-900">
         <div>
-          <span>&copy; 2020 Kiera.ai All rights reserved.</span>
+          <span>&copy; 2022 Kiera.ai All rights reserved.</span>
         </div>
       </div>
     </footer>
