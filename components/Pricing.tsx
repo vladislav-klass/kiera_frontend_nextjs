@@ -99,34 +99,34 @@ export default function Pricing({ products }: Props) {
             Try it out now for free!
           </p>
 
-          <div className="justify-center">
-            <div className="mt-8 mb-8">
-              <p className="mt-5 text-xl text-zinc-200 sm:text-center sm:text-2xl max-w-2xl m-auto">
-                Install Kiera with pip:
-              </p>
-              <pre className="text-xl text-zinc-200 sm:text-center sm:text-2xl max-w-2xl m-auto">
-                <code>
-                  pip install kiera
-                </code>
-              </pre>
+          {/* <div className="justify-center"> */}
+          {/* <div className="mt-8 mb-8"> */}
+          <p className="mt-5 text-xl text-zinc-200 sm:text-center sm:text-2xl max-w-2xl m-auto">
+            Install Kiera with pip:
+          </p>
+          <p className="text-xl text-zinc-200 sm:text-center sm:text-2xl max-w-2xl m-auto">
+            <code>
+              pip install kiera
+            </code>
+          </p>
 
-              <p className="mt-5 text-xl text-zinc-200 sm:text-center sm:text-2xl max-w-2xl m-auto">
-                After installing successfully try out:
-              </p>
-              <pre>
-                <p className="text-center mt-5 text-xl text-zinc-200 sm:text-center sm:text-2xl max-w-2xl m-auto">
-                  ka show free memory <br></br>
-                  ka initialize git repository <br></br>
-                  ka print all files created last week
-                </p>
-              </pre>
+          <p className="mt-5 text-xl text-zinc-200 sm:text-center sm:text-2xl max-w-2xl m-auto">
+            After installing successfully try from the command line:
+          </p>
+          <p className="text-xl text-zinc-200 sm:text-center sm:text-2xl max-w-2xl m-auto">
+            <code>
+              ka show free memory <br></br>
+              ka initialize git repository <br></br>
+              ka print all files created last week
+              </code>
+          </p>
 
 
-              <p className="mt-16 text-xl text-zinc-200 sm:text-center sm:text-2xl max-w-2xl m-auto">
-                Any questions? <a className="text-pink-500 underline" href="mailto:info@kiera.ai">Contact us</a>
-              </p>
-            </div>
-          </div>
+          <p className="mt-16 text-xl text-zinc-200 sm:text-center sm:text-2xl max-w-2xl m-auto">
+            Any questions? <a className="text-pink-500 underline" href="mailto:info@kiera.ai">Contact us</a>
+          </p>
+          {/* </div> */}
+          {/* </div> */}
         </div>
       </div>
     </section>
