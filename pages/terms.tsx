@@ -13,599 +13,172 @@ import { Provider } from '@supabase/supabase-js';
 import { getURL } from '@/utils/helpers';
 
 const Terms = () => {
-  return (
-    <>
-      <div className="mt-8 flex flex-col justify-between max-w-lg p-3 m-auto w-200 ">
-        <div className="flex justify-center">
-          <div className="mt-8 mb-8">
+    return (
+        <>
+            <div className="mt-8 flex flex-col justify-between max-w-lg p-3 m-auto w-200 ">
+                <div className="flex justify-center">
+                    <div className="mt-8 mb-8">
 
-            <h1><strong>Terms and Conditions of Kiera</strong></h1>
-            <p>These Terms govern</p>
-            <ul>
-                <li>the use of this Application, and,</li>
-            <li>any other related Agreement or legal relationship with the Owner</li>
-            </ul>
-            <p>in a legally binding way. Capitalized words are defined in the relevant dedicated section of this document.</p>
-            <p>The User must read this document carefully.</p>
-            <p>Nothing in these Terms creates any relationship of employment, agency, or partnership between the involved parties.
-            </p>
-            <p>This Application is provided by:</p>
-            <p>Kiera</p>
-            <p><strong>Owner contact email:</strong> <u>stefan.m.frisch@gmail.com</u> (ToDo)</p>
-            <h2><strong>Information about this Application</strong></h2>
-            <p>You describe in natural language what the shell is should do. Kiera suggests you a command that might solve the task.
-            </p>
-            <h2><strong>What the User should know at a glance</strong></h2>
-            <ul>
-                <li>Please note that some provisions in these Terms may only apply to certain categories of Users. In particular,
-                    certain provisions may only apply to Consumers or to those Users that do not qualify as Consumers. Such
-                    limitations are always explicitly mentioned within each affected clause. In the absence of any such mention,
-                    clauses apply to all Users.</li>
-                <li>The right of withdrawal only applies to European Consumers. The right of withdrawal, also commonly called the
-                    right of cancellation in the UK,is consistently referred to as "the right of withdrawal" within
-                    this document.</li>
-            </ul>
-            <p></p>
-            <h2><strong>TERMS OF USE</strong></h2>
-            <p>Unless otherwise specified, the terms of use detailed in this section apply generally when using this Application.
-            </p>
-            <p>Single or additional conditions of use or access may apply in specific scenarios and in such cases are additionally
-                indicated within this document.</p>
-            <p>By using this Application, Users confirm to meet the following requirements:</p>
-            <ul>
-                <li>There are no restrictions for Users in terms of being Consumers or Business Users.</li>
-            </ul>
-            <h3><strong>Account registration</strong></h3>
-            <p>To use the Service Users must register or create a User account, providing all required data or information in a
-                complete and truthful manner.</p>
-            <p>Failure to do so will cause unavailability of the Service.</p>
-            <p>Users are responsible for keeping their login credentials confidential and safe. For this reason, Users are also
-                required to choose passwords that meet the highest standards of strength permitted by this Application.</p>
-            <p>By registering, Users agree to be fully responsible for all activities that occur under their username and password.
-            </p>
-            <p>Users are required to immediately and unambiguously inform the Owner viathe contact details indicated in this
-                document, if they think their personal information, including but not limited to User accounts, access credentials
-                or personal data, have been violated, unduly disclosed or stolen.</p>
-            <h4><strong>Account termination</strong></h4>
-            <p>Users can terminate their account and stop using the Service at any timeby doing the following:</p>
-            <ul>
-                <li>By directly contacting the Owner at the contact details provided inthis document.</li>
-            </ul>
-            <h4><strong>Account suspension and deletion</strong></h4>
-            <p>The Owner reserves the right, at its sole discretion, to suspend or delete at any time and without notice, User
-                accounts which it deems inappropriate, offensive or in violation of these Terms.</p>
-            <p>The suspension or deletion of User accounts shall not entitle Users to any claims for compensation, damages or
-                reimbursement.</p>
-            <p>The suspension or deletion of accounts due to causes attributable to theUser does not exempt the User from paying any
-                applicable fees or prices.</p>
-            <h3><strong>Content on this Application</strong></h3>
-            <p>Unless where otherwise specified or clearly recognizable, all content available on this Application is owned or
-                provided by the Owner or its licensors.</p>
-            <p>The Owner undertakes its utmost effort to ensure that the content provided on this Application infringes no
-                applicable legal provisions or third-party rights. However, it may not always be possible to achieve such a result.
-            </p>
-            <p>In such cases, without prejudice to any legal prerogatives of Users to enforce their rights, Users are kindly asked
-                to preferably report related complaints using the contact details provided in this document.</p>
-            <p>The commands Kiera returns to you are called <strong>Suggestions </strong>and are not part of the content of the
-                Application. The <strong>suggestions</strong> are transferred into the ownership of the users. The user can do with
-                them as he sees fit. This includes altering, appending, sharing, saving, running, and a combination of those.</p>
-            <h4><strong>Rights regarding content on this Application - All rights reserved</strong></h4>
-            <p>The Owner holds and reserves all intellectual property rights for any such content.</p>
-            <p>Users may not therefore use such content in any way that is not necessary or implicit in the proper use of the
-                Service.</p>
-            <p>In particular, but without limitation, Users may not copy, download, share (beyond the limits set forth below),
-                modify, translate, transform, publish, transmit, sell, sublicense, edit, transfer/assign to third parties or create
-                derivative works from the content available on this Application, nor allow any third party to do so through the User
-                or their device, even without the User's knowledge.</p>
-            <p>Where explicitly stated on this Application, the User may download, copyand/or share some content available through
-                this Application for its sole personal and non-commercial use and provided that the copyright attributions and all
-                the other attributions requested by the Owner are correctly implemented.</p>
-            <p>Any applicable statutory limitation or exception to copyright shall stayunaffected.</p>
-            <h3><strong>Content provided by Users</strong></h3>
-            <p>The Owner allows Users to input natural language into Kiera which is then part of the content. Part of the input from
-                the user is the not explicitly provided information about the shell, the shells current state and the computer of
-                the user. This information is implicitly gathered by Kiera to improve the Suggestions and this information is also
-                part of the user input.</p>
-            <p>By providing content to this Application, Users confirm that they are legally allowed to do so and that they are not
-                infringing any statutory provisions and/or third-party rights.</p>
-            <p>Further insights regarding acceptable content can be found inside the section of these Terms which detail the
-                acceptable uses.</p>
-            <p>Users acknowledge and accept that by providing their own content to thisApplication they grant the Owner a
-                non-exclusive, worldwide, fully paid-upand royalty-free, irrevocable, perpetual (or for the entire protection term),
-                sub-licensable and transferable license to use, access, store, reproduce, modify, distribute, publish, process into
-                derivative works, broadcast, stream, transmit or otherwise exploit such content to provide and promote its Service
-                in any media or manner.</p>
-            <p>To the extent permitted by applicable law, Users waive any moral rights in connection with content they provide to
-                this Application.</p>
-            <p>Users acknowledge, accept and confirm that all content they provide through this Application is provided subject to
-                the same general conditions setforth for content on this Application.</p>
-            <h4><strong>Liability for provided content</strong></h4>
-            <p>Users are solely liable for any content provide through this Application. Users acknowledge and accept that
-                <strong>the Owner does not filter or moderate such content</strong>.</p>
-            <p>However, the Owner reserves the right to remove, delete, block or rectify such content at its own discretion and to,
-                without prior notice, deny theuploading User access to this Application:</p>
-            <ul>
-                <li>if any complaint based on such content is received;</li>
-            <li>if a notice of infringement of intellectual property rights is received;</li>
-            <li>upon order of a public authority; or</li>
-            <li>where the Owner is made aware that the content, while being accessible via this Application, may represent a risk
-                for Users, third parties and/or the availability of the Service.</li>
-            </ul>
-            <p>The removal, deletion, blocking or rectification of content shall not entitle Users that have provided such content
-                or that are liable for it, to any claims for compensation, damages or reimbursement.</p>
-            <p>Users agree to hold the Owner harmless from and against any claim asserted and/or damage suffered due to content they
-                provided to or provided through this Application.</p>
-            <h3><strong>Access to external resources</strong></h3>
-            <p>Through this Application Users may have access to external resources provided by third parties. Users acknowledge and
-                accept that the Owner has no control over such resources and is therefore not responsible for their content and
-                availability.</p>
-            <p>Conditions applicable to any resources provided by third parties, including those applicable to any possible grant of
-                rights in content, result from each such third parties' terms and conditions or, in the absence of those,
-                applicable statutory law.</p>
-            <p>Currently we are working with OpenAI so the content provided by the Usermust comply with their policies.</p>
-            <h3><strong>Acceptable use</strong></h3>
-            <p>This Application and the Service may only be used within the scope of what they are provided for, under these Terms
-                and applicable law.</p>
-            <p>Users are solely responsible for making sure that their use of this Application and/or the Service violates no
-                applicable law, regulations or third-party rights.</p>
-            <p>Therefore, the Owner reserves the right to take any appropriate measure to protect its legitimate interests including
-                denying Users access to this Application or the Service, terminating contracts, reporting any misconductperformed
-                through this Application or the Service to the competent authorities - such as judicial or administrative
-                authorities - whenever Users are suspected to be in violation of any laws, regulations, third-party rights and/or
-                these Terms, including, but not limited to, by engaging in any of the following activities:</p>
-            <h4><strong>Conduct restrictions</strong></h4>
-            <ul>
-                <li>pretending to fulfill any possible condition or requirements for accessing this Application and/or using the
-                    Services, such as for instance being adult according to law or qualifying as a Consumer.</li>
-            <li>concealing their identity or stealing someone else's identity or pretend to be or represent a third-party, if not
-                allowed to do so by such third-party.</li>
-            <li>manipulating identifiers to disguise or otherwise conceal the origin oftheir queries to our Servers.</li>
-            <li>defaming, abusing, harassing, using threatening practices, threatening or violating the legal rights of others in
-                any other way;</li>
-            <li>promoting activity that may endanger the User's life or the life of any other User or lead to physical harm.
-                This includes but is not limited to suicide threats or instigations, intentional physical trauma, the use of illegal
-                drugs, or excessive drinking. Under no circumstance is any User allowed to post any content promoting and/or
-                encouraging and/or showing any self-destructive or violent behavior on this Application;</li>
-            <li>probing, scanning or testing the vulnerability of this Application, including the services or any network connected
-                to the website, nor breaching the security or authentication measures on this Application, including the services or
-                any network connected to this Application;</li>
-            <li>installing, embedding, uploading or otherwise incorporating any malwareinto or via this Application;</li>
-            <li>using this Application or the technical infrastructure in an abusive, excessive or otherwise inappropriate way (for
-                example: for spamming purposes);</li>
-            <li>attempting to disrupt or tamper with the technical infrastructure in a manner that harms or places an undue burden
-                on this Application or the Service;</li>
-            </ul>
-            <h4><strong>Excessive use of the Service</strong></h4>
-            <ul>
-                <li>using a resource of this Application excessively in relation to other Users of this Application - in
-                    such cases, the Owner, at its sole discretion, additionally reserves the right to suspend the
-                    User'saccount or limit the related activity until the User reduces the excessiveconsumption;</li>
-            </ul>
-            <h4><strong>Excessive use of the API</strong></h4>
-            <ul>
-                <li>sending abusive or excessively frequent requests to the Service viathe API. The Owner will determine what
-                    constitutes abuse or excessive usage of the API and additionally reserves the right to temporarily or
-                    permanently suspend access to the API by the User. In such cases, the Owner will make a reasonable attempt to
-                    alert the User prior to suspension;</li>
-            </ul>
-            <h4><strong>Scraping</strong></h4>
-            <ul>
-                <li>adopting any automated process to extract, harvest or scrape information, data and/or content from this
-                    Application and all the digital properties thereto related unless where explicitly allowed to do so by the
-                    Owner;</li>
-            </ul>
-            <h4><strong>Content restrictions</strong></h4>
-            <ul>
-                <li>Disseminatin, querying or publishing content that is unlawful, obscene, illegitimate, libelous or inappropriate;
-                </li>
-            <li>Querying or publishing any content that promotes, either directly or indirectly, hate, racism, discrimination,
-                pornography, violence;</li>
-            <li>Disseminating, querying or publishing any content that is false or may create unjustified alarm;</li>
-            <li>using this Application to publish, disseminate or otherwise provide content protected by intellectual property laws,
-                including but not limited to patent, trademark or copyright law, unlawfully and without the legitimate
-                right-holder's consent;</li>
-            <li>using this Application to publish, disseminate or otherwise make available any other content which infringes on any
-                third-party rights, including but not limited to state, military, trade or professional secrets and personal data;
-            </li>
-            <li>publishing any content or carrying out any activity that disrupts, interrupts, harms, or otherwise violates the
-                integrity of this Application or another User's experience or devices. Such activities include: spamming,
-                distributing unauthorized advertisements, phishing, defrauding others, spreading malware or viruses etc.;</li>
-            </ul>
-            <h4><strong>User protection</strong></h4>
-            <ul>
-                <li>misappropriating any account in use by another User;</li>
-            <li>harvesting or collecting any personally identifying information of other Users including but not limited to their
-                email addresses or contact information, by circumventing the privacy setting of other Users' accounts on
-                this Application or by any other means;</li>
-            <li>using any information relating to other Users, including personal or contact data, for purposes other than those
-                this Application is intended for;</li>
-            </ul>
-            <h4><strong>Commercial use restrictions</strong></h4>
-            <ul>
-                <li>registering or using this Application in order to promote, sell or advertise products or services of any kind in
-                    any way;</li>
-            <li>indicating or trying to imply in any manner, that a User stands in a qualified relationship with this Application or
-                that this Application has endorsed the User, the User's products or services or any third party's products
-                and services for any purpose;</li>
-            </ul>
-            <h3><strong>Software license</strong></h3>
-            <p>Any intellectual or industrial property rights, and any other exclusive rights on software or technical applications
-                embedded in or related to thisApplication are held by the Owner and/or its licensors.</p>
-            <p>Subject to Users' compliance with and notwithstanding any divergent provision of these Terms, the Owner
-                merely grants Users a revocable, non-exclusive, non-sublicensable and non-transferable license to use the software
-                and/or any other technical means embedded in the Service within the scope and for the purposes of this Application
-                and the Service offered.</p>
-            <p>This license does not grant Users any rights to access, usage or disclosure of the original source code. All
-                techniques, algorithms, and procedurescontained in the software and any documentation thereto related is the
-                Owner's or its licensors' sole property.</p>
-            <p>All rights and license grants to Users shall immediately terminate upon any termination or expiration of the
-                Agreement.</p>
-            <p>Without prejudice to the above, under this license Users may download, install, use and run the software on the
-                permitted number of devices, provided that such devices are common and up-to-date in terms of technology and market
-                standards.</p>
-            <p>The Owner reserves the right to release updates, fixes and further developments of this Application and/or its
-                related software and to provide themto Users for free. Users may need to download and install such updates to
-                continue using this Application and/or its related software.</p>
-            <p>The User may download, install, use and run the software on unlimited devices.</p>
-            <p>However, it may not be permitted to run the software on more than one device at a time.</p>
-            <h2><strong>TERMS AND CONDITIONS OF SALE</strong></h2>
-            <h3><strong>Paid Products</strong></h3>
-            <p>Some of the Products provided on this Application, as part of the Service, are provided on the basis of payment.</p>
-            <p>The fees, duration and conditions applicable to the purchase of such Products are described below and in the
-                dedicated sections of this Application.</p>
-            <h3><strong>Product description</strong></h3>
-            <p>Prices, descriptions or availability of Products are outlined in the respective sections of this Application and are
-                subject to change without notice.</p>
-            <p>While Products on this Application are presented with the greatest accuracy technically possible, representation on
-                this Application through any means (including, as the case may be, graphic material, images, colors, sounds) is for
-                reference only and implies no warranty as to the characteristics of the purchased Product.</p>
-            <p>This implies in particular that the <strong>suggestions</strong> might not do the in natural language described task
-                or can even have unintended side effects (e.g. deleting a file or permantly alteration) when it is run. For that
-                reason we advise the user to take upmost care what he does with thesuggestions.</p>
-            <p>The characteristics of the chosen Product will be outlined during the purchasing process.</p>
-            <h3><strong>Purchasing process</strong></h3>
-            <p>Any steps taken from choosing a Product to order submission form part ofthe purchasing process.</p>
-            <p>The purchasing process includes these steps:</p>
-            <ul>
-                <li>Users must choose the desired Product and verify their purchase selection.</li>
-            <li>After having reviewed the information displayed in the purchase selection, Users may place the order by submitting
-                it.</li>
-            </ul>
-            <h3><strong>Order submission</strong></h3>
-            <p>When the User submits an order, the following applies:</p>
-            <ul>
-                <li>The submission of an order determines contract conclusion and therefore creates for the User the obligation to
-                    pay the price, taxes and possible further fees and expenses, as specified on the order page.</li>
-            <li>In case the purchased Product requires active input from the User, suchas the provision of personal information or
-                data, specifications or special wishes, the order submission creates an obligation for the User to cooperate
-                accordingly.</li>
-            <li>Upon submission of the order, Users will receive a receipt confirming that the order has been received.</li>
-            </ul>
-            <p>All notifications related to the described purchasing process shall be sent to the email address provided by the User
-                for such purposes.</p>
-            <h3><strong>Prices</strong></h3>
-            <p>Users are informed during the purchasing process and before order submission, about any fees, taxes and costs
-                (including, if any, delivery costs) that they will be charged.</p>
-            <p>Prices on this Application are displayed:</p>
-            <ul>
-                <li>either exclusive or inclusive of any applicable fees, taxes and costs, depending on the section the User is
-                    browsing.</li>
-            </ul>
-            <h3><strong>Methods of payment</strong></h3>
-            <p>Information related to accepted payment methods are made available during the purchasing process.</p>
-            <p>Some payment methods may only be available subject to additional conditions or fees. In such cases related
-                information can be found in the dedicated section of this Application.</p>
-            <p>All payments are independently processed through third-party services. Therefore, this Application does not collect
-                any payment information - such as credit card details - but only receives a notification once the
-                payment has been successfully completed.</p>
-            <p>If a payment through the available methods fails or is refused by the payment service provider, the Owner shall be
-                under no obligation to fulfill the purchase order. Any possible costs or fees resulting from the failed or refused
-                payment shall be borne by the User.</p>
-            <h3><strong>Authorization for future PayPal payment</strong></h3>
-            <p>If Users authorize the PayPal feature which allows future purchases, this Application will store an identification
-                code linked to the Users' PayPal account. This will authorize this Application to automatically process
-                payments for future purchases or recurring installments of past purchases.</p>
-            <p>This authorization can be revoked at any time, either by contacting the Owner or by changing the user settings
-                offered by PayPal.</p>
-            <h3><strong>Retention of usage rights</strong></h3>
-            <p>Users do not acquire any rights to use the purchased Product until the total purchase price is received by the Owner.
-            </p>
-            <h3><strong>Delivery</strong></h3>
-            <h4><strong>Performance of services</strong></h4>
-            <p>The purchased service shall be performed or made available within the timeframe specified on this Application or as
-                communicated before the order submission.</p>
-            <h3><strong>Contract duration</strong></h3>
-            <h4><strong>Subscriptions</strong></h4>
-            <p>Subscriptions allow Users to receive a Product continuously or regularlyover time. Details regarding the type of
-                subscription and termination are outlined below.</p>
-            <h4><strong>Open-ended subscriptions</strong></h4>
-            <p>Paid subscriptions begin on the day the payment is received by the Owner.</p>
-            <p>In order to maintain subscriptions, Users must pay the required recurring fee in a timely manner. Failure to do so
-                may cause service interruptions.</p>
-            <h4><strong>Termination of open-ended subscriptions</strong></h4>
-            <p><strong>Open-ended subscriptions may be terminated at any time by sending a clear and unambiguous termination notice
-                    to the Owner using the contactdetails provided in this document, or - if applicable - byusing
-                    the corresponding controls inside this Application.</strong></p>
-            <p><strong>Terminations shall take effect 2 days after the notice of termination has been received by the
-                    Owner.</strong></p>
-            <h2><strong>User rights</strong></h2>
-            <h3><strong>Right of withdrawal</strong></h3>
-            <p>Unless exceptions apply, the User may be eligible to withdraw from the contract within the period specified below
-                (generally 14 days), for any reason and without justification. Users can learn more about the withdrawal conditions
-                within this section.</p>
-            <h4><strong>Who the right of withdrawal applies to</strong></h4>
-            <p>Unless any applicable exception is mentioned below, Users who are European Consumers are granted a statutory
-                cancellation right under EU rules, to withdraw from contracts entered into online (distance contracts) within
-                thespecified period applicable to their case, for any reason and without justification.</p>
-            <p>Users that do not fit this qualification, cannot benefit from the rightsdescribed in this section.</p>
-            <h4><strong>Exercising the right of withdrawal</strong></h4>
-            <p>To exercise their right of withdrawal, Users must send to the Owner an unequivocal statement of their intention to
-                withdraw from the contract.</p>
-            <p>To this end, Users may send an email to the Owner unequivocal stating the withdrawal. Users are, however, free to
-                express their intention to withdraw from the contract by making an unequivocal statement in any other suitable way.
-                In order to meet the deadline within which they can exercise such right, Users must send the withdrawal notice
-                before the withdrawal period expires.</p>
-            <p>When does the withdrawal period expire?</p>
-            <ul>
-                <li><strong>Regarding the purchase of a service</strong>, the withdrawal period expires 14 days after the day that
-                    the contract is entered into, unless the User has waived the withdrawal right.</li>
-            </ul>
-            <h4><strong>Effects of withdrawal</strong></h4>
-            <p>Users who correctly withdraw from a contract will be reimbursed by the Owner for all payments made to the Owner,
-                including, if any, those covering the costs of delivery.</p>
-            <p>However, any additional costs resulting from the choice of a particular delivery method other than the least
-                expensive type of standard delivery offered by the Owner, will not be reimbursed.</p>
-            <p>Such reimbursement shall be made without undue delay and, in any event, no later than 14 days from the day on which
-                the Owner is informed of the User's decision to withdraw from the contract. Unless otherwise agreed with the
-                User, reimbursements will be made using the same means of payment as used to process the initial transaction. In any
-                event, the User shall not incur any costs or fees as a result of such reimbursement.</p>
-            <h5><strong>...on the purchase of services</strong></h5>
-            <p>Where a User exercises the right of withdrawal after having requested that the service be performed before the
-                withdrawal period expires, the User shall pay to the Owner an amount which is in proportion to the part of service
-                provided.</p>
-            <p>Such payment shall be calculated based on the fee contractually agreed upon, and be proportional to the part of
-                service provided until the time theUser withdraws, compared with the full coverage of the contract.</p>
-            <h2><strong>Liability and indemnification</strong></h2>
-            <p>The <strong>Commands</strong> <strong>Kiera</strong> returns to you are called <strong>Suggestions</strong>. They
-                should be treated as suggestions only. In particular, we do not claim any correctness of the suggestions. You hold
-                the ownership to the suggestions, and you are solely responsible forthem. This includes running the suggestions as
-                code in any form.</p>
-            <h3><strong>EU Users</strong></h3>
-            <h4><strong>Indemnification</strong></h4>
-            <p>The User agrees to indemnify and hold the Owner and its subsidiaries, affiliates, officers, directors, agents,
-                co-branders, partners and employees harmless from and against any claim or demand - including but
-                not limited to lawyer's fees and costs - made by any third party due to or in relation with any
-                culpable use of or connection to the Service, violation of these Terms, infringement of any third-party rights or
-                statutory provision by the User or its affiliates, officers, directors, agents, co-branders, partners and employees
-                to the extent allowed by applicable law.</p>
-            <h4><strong>Limitation of liability</strong></h4>
-            <p>Unless otherwise explicitly stated and without prejudice to applicable statutory product liability provisions, Users
-                shall have no right to claim damages against the Owner (or any natural or legal person acting on its behalf).</p>
-            <p>This does not apply to damages to life, health or physical integrity, damages resulting from the breach of an
-                essential contractual obligation suchas any obligation strictly necessary to achieve the purpose of the contract,
-                and/or damages resulting from intent or gross negligence, as long as this Application has been appropriately and
-                correctly used by the User.</p>
-            <p>Unless damages have been caused by way of intent or gross negligence, orthey affect life, health or physical
-                integrity, the Owner shall only be liable to the extent of typical and foreseeable damages at the moment the
-                contract was entered into.</p>
-            <p>In particular, within the limits stated above, the Owner shall not be liable for:</p>
-            <ul>
-                <li>any loss of business opportunities and any other loss, even indirect, that may be incurred by the User (such as,
-                    but not limited to, trading losses, loss of revenue, income, profits or anticipated savings, loss of contracts
-                    or business relationships, loss of reputation or goodwill, etc.);</li>
-                <li>damages or losses resulting from interruptions or malfunctions of this Application due to acts of force majeure,
-                    or unforeseen and unforeseeable events and, in any case, independent of the will and beyond the control of the
-                    Owner, such as, but not limited to, failures or disruptions of telephone or electrical lines, the Internet and /
-                    or other means of transmission, unavailability of websites, strikes, natural disasters, viruses and
-                    cyberattacks, interruptions in the delivery of products, third-party services or applications;</li>
-                <li>any losses that are not the direct consequence of a breach of the Terms by the Owner;</li>
-                <li>any damage, prejudice or loss occurring due to viruses or other malware contained in or connected to files
-                    available for download from the internet or via this Application. Users are responsible for implementing
-                    sufficient security measures - such as anti-viruses and firewalls to prevent any such infection or
-                    attack and for securing backup copies of all data or information exchanged via or uploaded to this Application.
-                </li>
-            </ul>
-            <h3><strong>Australian Users</strong></h3>
-            <h4><strong>Limitation of liability</strong></h4>
-            <p>Nothing in these Terms excludes, restricts or modifies any guarantee, condition, warranty, right or remedy which the
-                User may have under the Competition and Consumer Act 2010 (Cth) or any similar State and Territory legislation and
-                which cannot be excluded, restricted or modified (non-excludable right). To the fullest extent permitted by law, our
-                liability to the User, including liability for a breach of a non-excludable right and liability which is not
-                otherwise excluded under these Terms of Use, is limited, at the Owner's sole discretion, to the
-                re-performance of the services or the payment of the cost of having the services supplied again.</p>
-            <h3><strong>US Users</strong></h3>
-            <h4><strong>Disclaimer of Warranties</strong></h4>
-            <p>This Application is provided strictly on an "as is" and "as available" basis.
-                    Use of the Service is at Users' own risk. To the maximum extent permitted by applicable law, theOwner
-                    expressly disclaims all conditions, representations, and warranties - whether express, implied,
-                    statutory or otherwise, including, but not limited to, any implied warranty of merchantability, fitness for a
-                    particular purpose, or non-infringement of third-party rights. No advice or information, whether oral or
-                    written, obtained by user from owner or through the Service will create any warranty not expressly stated
-                    herein.</p>
-            <p>Without limiting the foregoing, the Owner, its subsidiaries, affiliates, licensors, officers, directors,
-                    agents, co-branders, partners, suppliers and employees do not warrant that the content is accurate, reliable or
-                    correct; that the Service will meet Users' requirements; that the Service will be available at any
-                    particular time or location, uninterrupted or secure; that any defects or errors will be corrected; or that the
-                    Service is free of viruses or other harmful components. Any content downloadedor otherwise obtained through the
-                    use of the Service is downloaded at users own risk and users shall be solely responsible for any damage to
-                    Users' computer system or mobile device or loss of data that results from such download or
-                    Users' use of the Service.</p>
-            <p>The Owner does not warrant, endorse, guarantee, or assume responsibility for any product or service
-                    advertised or offered by a third party through the Service or any hyperlinked website or service, and the Owner
-                    shall not be a party to or in any way monitor any transaction between Users and third-party providers of
-                    products or services.</p>
-            <p>The Service may become inaccessible or it may not function properly with Users' web browser, mobile
-                    device, and/or operating system. The owner cannot be held liable for any perceived or actual damages arising
-                    from Service content, operation, or use of this Service.</p>
-            <p>Federal law, some states, and other jurisdictions, do not allow the exclusion and limitations of certain
-                    implied warranties. The above exclusions may not apply to Users. This Agreement gives Users specific legal
-                    rights, and Users may also have other rights which vary from state to state. The disclaimers and exclusions
-                    under this agreement shall not apply to the extent prohibited by applicable law.</p>
-            <h4><strong>Limitations of liability</strong></h4>
-            <p>To the maximum extent permitted by applicable law, in no event shall the Owner, and its subsidiaries,
-                    affiliates, officers, directors, agents, co-branders, partners, suppliers and employees be liable for
-            </p>
-            <ul>
-                <li>any indirect, punitive, incidental, special, consequential or exemplary damages, including without
-                        limitation damages for loss of profits, goodwill, use, data or other intangible losses, arising out of or
-                        relating to the use of, or inability to use, the Service; and</li>
-            <li>any damage, loss or injury resulting from hacking, tampering orother unauthorized access or use of the
-                    Service or User account or the information contained therein;</li>
-            <li>any errors, mistakes, or inaccuracies of content;</li>
-            <li>personal injury or property damage, of any nature whatsoever, resulting from User access to or use of the
-                    Service;</li>
-            <li>any unauthorized access to or use of the Owner's secureservers and/or any and all personal
-                    information stored therein;</li>
-            <li>any interruption or cessation of transmission to or from the Service;</li>
-            <li>any bugs, viruses, trojan horses, or the like that may be transmitted to or through the Service;
-            </li>
-            <li>any errors or omissions in any content or for any loss or damage incurred as a result of the use of any
-                    content posted, emailed, transmitted, or otherwise made available through the Service; and/or</li>
-            <li>the defamatory, offensive, or illegal conduct of any User or third party. In no event shall the Owner, and
-                    its subsidiaries, affiliates, officers, directors, agents, co-branders, partners, suppliers and employees be
-                    liable for any claims, proceedings, liabilities, obligations, damages, losses or costs in an amount exceeding
-                    the amount paid by User to the Owner hereunder in the preceding 12 months, or the period of duration of this
-                    agreement between the Owner and User, whichever is shorter.</li>
-            </ul>
-            <p>This limitation of liability section shall apply to the fullest extent permitted by law in the applicable
-                    jurisdiction whether the alleged liability is based on contract, tort, negligence, strict liability, or any
-                    other basis, even if company has been advised of the possibility of such damage.</p>
-            <p>Some jurisdictions do not allow the exclusion or limitation of incidental or consequential damages, therefore
-                    the above limitations or exclusions may not apply to User. The terms give User specific legal rights, and User
-                    may also have other rights which vary from jurisdiction to jurisdiction. The disclaimers, exclusions, and
-                    limitations of liability under the terms shall not apply to the extent prohibited by applicable law.
-            </p>
-            <h4><strong>Indemnification</strong></h4>
-            <p>The User agrees to defend, indemnify and hold the Owner and its subsidiaries, affiliates, officers,
-                    directors, agents, co-branders, partners, suppliers and employees harmless from and against any and all claims
-                    or demands, damages, obligations, losses, liabilities, costs or debt, and expenses, including, but not limited
-                    to, legal fees and expenses, arising from</p>
-            <ul>
-                <li>User's use of and access to the Service, including any data or content transmitted or received
-                        by User;</li>
-            <li>User's violation of these terms, including, but not limited to, User's breach of any of the
-                    representations and warrantiesset forth in these terms;</li>
-            <li>User's violation of any third-party rights, including, but not limited to, any right of privacy or
-                    intellectual property rights;</li>
-            <li>User's violation of any statutory law, rule, or regulation;</li>
-            <li>any content that is submitted from User's account, including third party access with User's
-                    unique username, password or other security measure, if applicable, including, but not limited to, misleading,
-                    false, or inaccurate information;</li>
-            <li>User's wilful misconduct; or</li>
-            <li>statutory provision by User or its affiliates, officers, directors, agents, co-branders, partners, suppliers
-                    and employees to the extent allowed by applicable law.</li>
-            </ul >
-            <h2><strong>Common provisions</strong></h2>
-            <h3><strong>No Waiver</strong></h3>
-            <p>The Owner's failure to assert any right or provision under theseTerms shall not constitute a waiver of any
-                such right or provision. No waiver shall be considered a further or continuing waiver of such term or any other
-                term.</p>
-            <h3><strong>Service interruption</strong></h3>
-            <p>To ensure the best possible service level, the Owner reserves the right to interrupt the Service for maintenance,
-                system updates or any other changes, informing the Users appropriately.</p>
-            <p>Within the limits of law, the Owner may also decide to suspend or terminate the Service altogether. If the Service is
-                terminated, the Owner will cooperate with Users to enable them to withdraw Personal Data or information in
-                accordance with applicable law.</p>
-            <p>Additionally, the Service might not be available due to reasons outside the Owner's reasonable control, such
-                as "force majeure" (eg. labor actions, infrastructural breakdowns or blackouts etc). Inparticular
-                this hold for an unavailability of the OpenAi servers.</p>
-            <h3><strong>Service reselling</strong></h3>
-            <p>Users may not reproduce, duplicate, copy, sell, resell or exploit any portion of this Application and of its Service
-                without the Owner's express prior written permission, granted either directly or through a legitimate
-                reselling programme.</p>
-            <h3><strong>Privacy policy</strong></h3>
-            <p>To learn more about the use of their Personal Data, Users may refer to the privacy policy of this Application.</p>
-            <h3><strong>Intellectual property rights</strong></h3>
-            <p>Without prejudice to any more specific provision of these Terms, any intellectual property rights, such as
-                copyrights, trademark rights, patent rights and design rights related to this Application are the exclusive property
-                of the Owner or its licensors and are subject to the protection granted by applicable laws or international treaties
-                relating to intellectual property.</p>
-            <p>All trademarks - nominal or figurative - and all other marks, trade names, service marks, word marks,
-                illustrations, images, or logos appearing in connection with this Application are, and remain, the exclusive
-                property of the Owner or its licensors and are subject to the protection granted by applicable laws or international
-                treaties related to intellectual property.</p>
-            <h3><strong>Changes to these Terms</strong></h3>
-            <p>The Owner reserves the right to amend or otherwise modify these Terms atany time. In such cases, the Owner will
-                appropriately inform the User of these changes.</p>
-            <p>Such changes will only affect the relationship with the User for the future.</p>
-            <p>The continued use of the Service will signify the User's acceptance of the revised Terms. If Users do not
-                wish to be bound by the changes, they must stop using the Service. Failure to accept the revised Terms, may entitle
-                either party to terminate the Agreement.</p>
-            <p>The applicable previous version will govern the relationship prior to the User's acceptance. The User can obtain any
-                previous version from the Owner.</p>
-            <p>If required by applicable law, the Owner will specify the date by which the modified Terms will enter into force.</p>
-            <h3><strong>Assignment of contract</strong></h3>
-            <p>The Owner reserves the right to transfer, assign, dispose of by novation, or subcontract any or all rights or
-                obligations under these Terms, takingthe User's legitimate interests into account. Provisions
-                regardingchanges of these Terms will apply accordingly.</p>
-            <p>Users may not assign or transfer their rights or obligations under theseTerms in any way, without the written
-                permission of the Owner.</p>
-            <h3><strong>Contacts</strong></h3>
-            <p>All communications relating to the use of this Application must be sent using the contact information stated in this
-                document.</p>
-            <h3><strong>Severability</strong></h3>
-            <p>Should any provision of these Terms be deemed or become invalid or unenforceable under applicable law, the invalidity
-                or unenforceability of such provision shall not affect the validity of the remaining provisions, which shall remain
-                in full force and effect.</p>
-            <h4><strong>US Users</strong></h4>
-            <p>Any such invalid or unenforceable provision will be interpreted, construed and reformed to the extent reasonably
-                required to render it valid, enforceable and consistent with its original intent. These Terms constitute the entire
-                Agreement between Users and the Owner with respect to the subject matter hereof, and supersede all other
-                communications, including but not limited to all prior agreements, between the parties with respect to such subject
-                matter. These Terms will be enforced to the fullest extent permitted by law.</p>
-            <h4><strong>EU Users</strong></h4>
-            <p>Should any provision of these Terms be or be deemed void, invalid or unenforceable, the parties shall do their best
-                to find, in an amicable way, anagreement on valid and enforceable provisions thereby substituting the void, invalid
-                or unenforceable parts.</p>
-            <p>In case of failure to do so, the void, invalid or unenforceable provisions shall be replaced by the applicable
-                statutory provisions, if so permitted or stated under the applicable law.</p>
-            <p>Without prejudice to the above, the nullity, invalidity or the impossibility to enforce a particular provision of
-                these Terms shall not nullify theentire Agreement, unless the severed provisions are essential to the Agreement, or
-                of such importance that the parties would not have entered into the contract if they had known that the provision
-                would not be valid, or in cases where the remaining provisions would translate into an unacceptable hardship on any
-                of the parties.</p>
-            <h3><strong>Governing law</strong></h3>
-            <p>These Terms are governed by the law of the place where the Owner is based, as disclosed in the relevant section of
-                this document, without regard toconflict of laws principles.</p>
-            <h4><strong>Exception for European Consumers</strong></h4>
-            <p>However, regardless of the above, if the User qualifies as a European Consumer and has their habitual residence in a
-                country where the law providesfor a higher consumer protection standard, such higher standards shall prevail.</p>
-            <h3><strong>Venue of jurisdiction</strong></h3>
-            <p>The exclusive competence to decide on any controversy resulting from or connected to these Terms lies with the courts
-                of the place where the Owner is based, as displayed in the relevant section of this document.</p>
-            <h4><strong>Exception for European Consumers</strong></h4>
-            <p>The above does not apply to any Users that qualify as European Consumers, nor to Consumers based in Switzerland,
-                Norway or Iceland.</p>
-            <h2><strong>Dispute resolution</strong></h2>
-            <h3><strong>Amicable dispute resolution</strong></h3>
-            <p>Users may bring any disputes to the Owner who will try to resolve them amicably.</p>
-            <p>While Users' right to take legal action shall always remain unaffected, in the event of any controversy regarding the
-                use of this Application or the Service, Users are kindly asked to contact the Owner at the contact details provided
-                in this document.</p>
-            <p>The User may submit the complaint including a brief description and if applicable, the details of the related order,
-                purchase, or account, to the Owner's email address specified in this document.</p>
-            <p>The Owner will process the complaint without undue delay and within 2 days of receiving it.</p>
-            <h3><strong>Online dispute resolution for Consumers</strong></h3>
-            <p>The European Commission has established an online platform for alternative dispute resolutions that facilitates an
-                out-of-court method for solving disputes related to and stemming from online sale and service contracts.</p>
-            <p>As a result, any European Consumer or Consumer based in Norway, Iceland,or Liechtenstein can use such platform for
-                resolving disputes stemming from contracts which have been entered into online. The platform is <u>available at the
-                    following link</u>.</p>
-            <h2><strong>Definitions and legal references</strong></h2>
-            <p>The <strong>commands</strong> (discuss) <strong>Kiera</strong> returns to you are called
-                <strong>Suggestions</strong>.</p>
+                        <h1><strong>Terms and Conditions of Kiera</strong></h1>
 
-          </div >
-        </div >
-      </div >
-    </>
-  );
+                        <p><strong>TERMS OF USE</strong></p>
+                        <p><strong>Last updated December 06, 2022</strong></p>
+                        <p><strong>TABLE OF CONTENTS</strong></p>
+                        <p><a href="#agreement">1. AGREEMENT TO TERMS</a></p>
+                        <p><a href="#ip">2. INTELLECTUAL PROPERTY RIGHTS</a></p>
+                        <p><a href="#userreps">3. USER REPRESENTATIONS</a></p>
+                        <p><a href="#userreg">4. USER REGISTRATION</a></p>
+                        <p><a href="#prohibited">5. PROHIBITED ACTIVITIES</a></p>
+                        <p><a href="#ugc">6. USER GENERATED CONTRIBUTIONS</a></p>
+                        <p><a href="#license">7. CONTRIBUTION LICENSE</a></p>
+                        <p><a href="#reviews"></a></p>
+                        <p><a href="#mobile"></a></p>
+                        <p><a href="#socialmedia">8. SOCIAL MEDIA</a><a href="#agreement"></a></p>
+                        <p><a href="#submissions">9. SUBMISSIONS</a></p>
+                        <p><a href="#advertisers"></a></p>
+                        <p><a href="#sitemanage">10. SITE MANAGEMENT</a></p>
+                        <p><a href="#privacypolicy1">11. PRIVACY POLICY</a><a href="#advertisers"></a><a href="#agreement"></a></p>
+                        <p><a href="#dmca"></a><a href="#dmca"></a></p>
+                        <p><a href="#copyright1"></a></p>
+                        <p><a href="#terms"></a><a href="#terms">12. TERM AND TERMINATION</a></p>
+                        <p><a href="#modifications">13. MODIFICATIONS AND INTERRUPTIONS</a></p>
+                        <p><a href="#law">14. GOVERNING LAW</a></p>
+                        <p><a href="#disputes">15. DISPUTE RESOLUTION</a></p>
+                        <p><a href="#corrections">16. CORRECTIONS</a></p>
+                        <p><a href="#disclaimer">17. DISCLAIMER</a></p>
+                        <p><a href="#liability">18. LIMITATIONS OF LIABILITY</a></p>
+                        <p><a href="#indemnification">19. INDEMNIFICATION</a></p>
+                        <p><a href="#userdata">20. USER DATA</a></p>
+                        <p><a href="#electronic">21. ELECTRONIC COMMUNICATIONS, TRANSACTIONS, AND SIGNATURES</a></p>
+                        <p><a href="#california">22. CALIFORNIA USERS AND RESIDENTS</a><a href="#agreement"></a></p>
+                        <p><a href="#misc">23. MISCELLANEOUS</a></p>
+                        <p><a href="#contact">24. CONTACT US</a></p>
+                        <p><strong>1. AGREEMENT TO TERMS</strong></p>
+                        <p>These Terms of Use constitute a legally binding agreement made between you, whether personally or on behalf of an entity (“you”) and Vladislav Klass, doing business as Kiera ("<strong>Kiera</strong>," “<strong>we</strong>," “<strong>us</strong>," or “<strong>our</strong>”), concerning your access to and use of the <a href="https://www.kiera.ai/">https://www.kiera.ai/</a> website as well as any other media form, media channel, mobile website or mobile application related, linked, or otherwise connected thereto (collectively, the “Site”). We are registered in Germany and have our registered office at Westendstr. 231, München, Bavaria 80686. You agree that by accessing the Site, you have read, understood, and agreed to be bound by all of these Terms of Use. IF YOU DO NOT AGREE WITH ALL OF THESE TERMS OF USE, THEN YOU ARE EXPRESSLY PROHIBITED FROM USING THE SITE AND YOU MUST DISCONTINUE USE IMMEDIATELY.</p>
+                        <p>Supplemental terms and conditions or documents that may be posted on the Site from time to time are hereby expressly incorporated herein by reference. We reserve the right, in our sole discretion, to make changes or modifications to these Terms of Use from time to time. We will alert you about any changes by updating the “Last updated” date of these Terms of Use, and you waive any right to receive specific notice of each such change. Please ensure that you check the applicable Terms every time you use our Site so that you understand which Terms apply. You will be subject to, and will be deemed to have been made aware of and to have accepted, the changes in any revised Terms of Use by your continued use of the Site after the date such revised Terms of Use are posted.</p>
+                        <p>The information provided on the Site is not intended for distribution to or use by any person or entity in any jurisdiction or country where such distribution or use would be contrary to law or regulation or which would subject us to any registration requirement within such jurisdiction or country. Accordingly, those persons who choose to access the Site from other locations do so on their own initiative and are solely responsible for compliance with local laws, if and to the extent local laws are applicable.</p>
+                        <p>The Site is not tailored to comply with industry-specific regulations (Health Insurance Portability and Accountability Act (HIPAA), Federal Information Security Management Act (FISMA), etc.), so if your interactions would be subjected to such laws, you may not use this Site. You may not use the Site in a way that would violate the Gramm-Leach-Bliley Act (GLBA).</p>
+                        <p>The Site is intended for users who are at least 18 years old. Persons under the age of 18 are not permitted to use or register for the Site.</p>
+                        <p><strong><strong>2.&nbsp;</strong>INTELLECTUAL PROPERTY RIGHTS</strong></p>
+                        <p>Unless otherwise indicated, the Site is our proprietary property and all source code, databases, functionality, software, website designs, audio, video, text, photographs, and graphics on the Site (collectively, the “Content”) and the trademarks, service marks, and logos contained therein (the “Marks”) are owned or controlled by us or licensed to us, and are protected by copyright and trademark laws and various other intellectual property rights and unfair competition laws of the United States, international copyright laws, and international conventions. The Content and the Marks are provided on the Site “AS IS” for your information and personal use only. Except as expressly provided in these Terms of Use, no part of the Site and no Content or Marks may be copied, reproduced, aggregated, republished, uploaded, posted, publicly displayed, encoded, translated, transmitted, distributed, sold, licensed, or otherwise exploited for any commercial purpose whatsoever, without our express prior written permission.</p>
+                        <p>Provided that you are eligible to use the Site, you are granted a limited license to access and use the Site and to download or print a copy of any portion of the Content to which you have properly gained access solely for your personal, non-commercial use. We reserve all rights not expressly granted to you in and to the Site, the Content and the Marks.</p>
+                        <p><strong><strong><strong>3.</strong>&nbsp;</strong>USER REPRESENTATIONS</strong></p>
+                        <p>By using the Site, you represent and warrant that:&nbsp;(1) all registration information you submit will be true, accurate, current, and complete; (2) you will maintain the accuracy of such information and promptly update such registration information as necessary;&nbsp;(3) you have the legal capacity and you agree to comply with these Terms of Use;&nbsp;(4) you are not a minor in the jurisdiction in which you reside; (5) you will not access the Site through automated or non-human means, whether through a bot, script, or otherwise; (6) you will not use the Site for any illegal or unauthorized purpose; and (7) your use of the Site will not violate any applicable law or regulation.</p>
+                        <p>If you provide any information that is untrue, inaccurate, not current, or incomplete, we have the right to suspend or terminate your account and refuse any and all current or future use of the Site (or any portion thereof).</p>
+                        <p><strong><strong><strong>4.</strong>&nbsp;</strong>USER REGISTRATION</strong></p>
+                        <p>&nbsp; &nbsp;&nbsp;</p>
+                        <p>You may be required to register with the Site. You agree to keep your password confidential and will be responsible for all use of your account and password. We reserve the right to remove, reclaim, or change a username you select if we determine, in our sole discretion, that such username is inappropriate, obscene, or otherwise objectionable.</p>
+                        <p><strong><strong><strong>5.</strong>&nbsp;</strong>PROHIBITED ACTIVITIES</strong></p>
+                        <p>You may not access or use the Site for any purpose other than that for which we make the Site available. The Site may not be used in connection with any commercial endeavors except those that are specifically endorsed or approved by us.</p>
+                        <p>As a user of the Site, you agree not to:</p>
+                        <ul>
+                            <li>Systematically retrieve data or other content from the Site to create or compile, directly or indirectly, a collection, compilation, database, or directory without written permission from us.</li>
+                            <li>Trick, defraud, or mislead us and other users, especially in any attempt to learn sensitive account information such as user passwords.</li>
+                            <li>Circumvent, disable, or otherwise interfere with security-related features of the Site, including features that prevent or restrict the use or copying of any Content or enforce limitations on the use of the Site and/or the Content contained therein.</li>
+                            <li>Disparage, tarnish, or otherwise harm, in our opinion, us and/or the Site.</li>
+                            <li>Use any information obtained from the Site in order to harass, abuse, or harm another person.</li>
+                            <li>Make improper use of our support services or submit false reports of abuse or misconduct.</li>
+                            <li>Use the Site in a manner inconsistent with any applicable laws or regulations.</li>
+                            <li>Engage in unauthorized framing of or linking to the Site.</li>
+                            <li>Upload or transmit (or attempt to upload or to transmit) viruses, Trojan horses, or other material, including excessive use of capital letters and spamming (continuous posting of repetitive text), that interferes with any party’s uninterrupted use and enjoyment of the Site or modifies, impairs, disrupts, alters, or interferes with the use, features, functions, operation, or maintenance of the Site.</li>
+                            <li>Engage in any automated use of the system, such as using scripts to send comments or messages, or using any data mining, robots, or similar data gathering and extraction tools.</li>
+                            <li>Delete the copyright or other proprietary rights notice from any Content.</li>
+                            <li>Attempt to impersonate another user or person or use the username of another user.</li>
+                            <li>Upload or transmit (or attempt to upload or to transmit) any material that acts as a passive or active information collection or transmission mechanism, including without limitation, clear graphics interchange formats (“gifs”), 1×1 pixels, web bugs, cookies, or other similar devices (sometimes referred to as “spyware” or “passive collection mechanisms” or “pcms”).</li>
+                            <li>Interfere with, disrupt, or create an undue burden on the Site or the networks or services connected to the Site.</li>
+                            <li>Harass, annoy, intimidate, or threaten any of our employees or agents engaged in providing any portion of the Site to you.</li>
+                            <li>Attempt to bypass any measures of the Site designed to prevent or restrict access to the Site, or any portion of the Site.</li>
+                            <li>Copy or adapt the Site’s software, including but not limited to Flash, PHP, HTML, JavaScript, or other code.</li>
+                            <li>Except as permitted by applicable law, decipher, decompile, disassemble, or reverse engineer any of the software comprising or in any way making up a part of the Site.</li>
+                            <li>Except as may be the result of standard search engine or Internet browser usage, use, launch, develop, or distribute any automated system, including without limitation, any spider, robot, cheat utility, scraper, or offline reader that accesses the Site, or using or launching any unauthorized script or other software.</li>
+                            <li>Use a buying agent or purchasing agent to make purchases on the Site.</li>
+                            <li>Make any unauthorized use of the Site, including collecting usernames and/or email addresses of users by electronic or other means for the purpose of sending unsolicited email, or creating user accounts by automated means or under false pretenses.</li>
+                            <li>Use the Site as part of any effort to compete with us or otherwise use the Site and/or the Content for any revenue-generating endeavor or commercial enterprise.</li>
+                        </ul>
+                        <p><strong><strong><strong>6.</strong>&nbsp;</strong>USER GENERATED CONTRIBUTIONS</strong></p>
+                        <p>The Site does not offer users to submit or post content. We may provide you with the opportunity to create, submit, post, display, transmit, perform, publish, distribute, or broadcast content and materials to us or on the Site, including but not limited to text, writings, video, audio, photographs, graphics, comments, suggestions, or personal information or other material (collectively, "Contributions"). Contributions may be viewable by other users of the Site and through third-party websites. As such, any Contributions you transmit may be treated in accordance with the Site Privacy Policy. When you create or make available any Contributions, you thereby represent and warrant that:</p>
+                        <ul>
+                            <li>The creation, distribution, transmission, public display, or performance, and the accessing, downloading, or copying of your Contributions do not and will not infringe the proprietary rights, including but not limited to the copyright, patent, trademark, trade secret, or moral rights of any third party.</li>
+                            <li>You are the creator and owner of or have the necessary licenses, rights, consents, releases, and permissions to use and to authorize us, the Site, and other users of the Site to use your Contributions in any manner contemplated by the Site and these Terms of Use.</li>
+                            <li>You have the written consent, release, and/or permission of each and every identifiable individual person in your Contributions to use the name or likeness of each and every such identifiable individual person to enable inclusion and use of your Contributions in any manner contemplated by the Site and these Terms of Use.</li>
+                            <li>Your Contributions are not false, inaccurate, or misleading.</li>
+                            <li>Your Contributions are not unsolicited or unauthorized advertising, promotional materials, pyramid schemes, chain letters, spam, mass mailings, or other forms of solicitation.</li>
+                            <li>Your Contributions are not obscene, lewd, lascivious, filthy, violent, harassing, libelous, slanderous, or otherwise objectionable (as determined by us).</li>
+                            <li>Your Contributions do not ridicule, mock, disparage, intimidate, or abuse anyone.</li>
+                            <li>Your Contributions are not used to harass or threaten (in the legal sense of those terms) any other person and to promote violence against a specific person or class of people.</li>
+                            <li>Your Contributions do not violate any applicable law, regulation, or rule.</li>
+                            <li>Your Contributions do not violate the privacy or publicity rights of any third party.</li>
+                            <li>Your Contributions do not violate any applicable law concerning child pornography, or otherwise intended to protect the health or well-being of minors.</li>
+                            <li>Your Contributions do not include any offensive comments that are connected to race, national origin, gender, sexual preference, or physical handicap.</li>
+                            <li>Your Contributions do not otherwise violate, or link to material that violates, any provision of these Terms of Use, or any applicable law or regulation.</li>
+                        </ul>
+                        <p>Any use of the Site in violation of the foregoing violates these Terms of Use and may result in, among other things, termination or suspension of your rights to use the Site.</p>
+                        <p><strong><strong><strong>7.</strong>&nbsp;</strong>CONTRIBUTION LICENSE</strong></p>
+                        <p>You agree that we may access, store, process, and use any information and personal data that you provide following the terms of the Privacy Policy and your choices (including settings).</p>
+                        <p>By submitting suggestions or other feedback regarding the Site, you agree that we can use and share such feedback for any purpose without compensation to you.</p>
+                        <p>We do not assert any ownership over your Contributions. You retain full ownership of all of your Contributions and any intellectual property rights or other proprietary rights associated with your Contributions. We are not liable for any statements or representations in your Contributions provided by you in any area on the Site. You are solely responsible for your Contributions to the Site and you expressly agree to exonerate us from any and all responsibility and to refrain from any legal action against us regarding your Contributions.</p>
+                        <p><strong><strong><strong>8.</strong>&nbsp;</strong>SOCIAL MEDIA</strong></p>
+                        <p>As part of the functionality of the Site, you may link your account with online accounts you have with third-party service providers (each such account, a “Third-Party Account”) by either: (1) providing your Third-Party Account login information through the Site; or (2) allowing us to access your Third-Party Account, as is permitted under the applicable terms and conditions that govern your use of each Third-Party Account. You represent and warrant that you are entitled to disclose your Third-Party Account login information to us and/or grant us access to your Third-Party Account, without breach by you of any of the terms and conditions that govern your use of the applicable Third-Party Account, and without obligating us to pay any fees or making us subject to any usage limitations imposed by the third-party service provider of the Third-Party Account. By granting us access to any Third-Party Accounts, you understand that (1) we may access, make available, and store (if applicable) any content that you have provided to and stored in your Third-Party Account (the “Social Network Content”) so that it is available on and through the Site via your account, including without limitation any friend lists and (2) we may submit to and receive from your Third-Party Account additional information to the extent you are notified when you link your account with the Third-Party Account. Depending on the Third-Party Accounts you choose and subject to the privacy settings that you have set in such Third-Party Accounts, personally identifiable information that you post to your Third-Party Accounts may be available on and through your account on the Site. Please note that if a Third-Party Account or associated service becomes unavailable or our access to such Third Party Account is terminated by the third-party service provider, then Social Network Content may no longer be available on and through the Site. You will have the ability to disable the connection between your account on the Site and your Third-Party Accounts at any time. PLEASE NOTE THAT YOUR RELATIONSHIP WITH THE THIRD-PARTY SERVICE PROVIDERS ASSOCIATED WITH YOUR THIRD-PARTY ACCOUNTS IS GOVERNED SOLELY BY YOUR AGREEMENT(S) WITH SUCH THIRD-PARTY SERVICE PROVIDERS. We make no effort to review any Social Network Content for any purpose, including but not limited to, for accuracy, legality, or non-infringement, and we are not responsible for any Social Network Content. You acknowledge and agree that we may access your email address book associated with a Third-Party Account and your contacts list stored on your mobile device or tablet computer solely for purposes of identifying and informing you of those contacts who have also registered to use the Site. You can deactivate the connection between the Site and your Third-Party Account by contacting us using the contact information below or through your account settings (if applicable). We will attempt to delete any information stored on our servers that was obtained through such Third-Party Account, except the username and profile picture that become associated with your account.</p>
+                        <p><strong><strong><strong>9.</strong>&nbsp;</strong>SUBMISSIONS</strong></p>
+                        <p>You acknowledge and agree that any questions, comments, suggestions, ideas, feedback, or other information regarding the Site ("Submissions") provided by you to us are non-confidential and shall become our sole property. We shall own exclusive rights, including all intellectual property rights, and shall be entitled to the unrestricted use and dissemination of these Submissions for any lawful purpose, commercial or otherwise, without acknowledgment or compensation to you. You hereby waive all moral rights to any such Submissions, and you hereby warrant that any such Submissions are original with you or that you have the right to submit such Submissions. You agree there shall be no recourse against us for any alleged or actual infringement or misappropriation of any proprietary right in your Submissions.</p>
+                        <p><strong><strong><strong>10.</strong>&nbsp;</strong>SITE MANAGEMENT</strong></p>
+                        <p>We reserve the right, but not the obligation, to: (1) monitor the Site for violations of these Terms of Use; (2) take appropriate legal action against anyone who, in our sole discretion, violates the law or these Terms of Use, including without limitation, reporting such user to law enforcement authorities; (3) in our sole discretion and without limitation, refuse, restrict access to, limit the availability of, or disable (to the extent technologically feasible) any of your Contributions or any portion thereof; (4) in our sole discretion and without limitation, notice, or liability, to remove from the Site or otherwise disable all files and content that are excessive in size or are in any way burdensome to our systems; and (5) otherwise manage the Site in a manner designed to protect our rights and property and to facilitate the proper functioning of the Site.</p>
+                        <p><strong><strong><strong>11.</strong>&nbsp;</strong>PRIVACY POLICY</strong></p>
+                        <p>We care about data privacy and security.&nbsp;Please review our Privacy Policy:<strong>&nbsp;<a href="https://jkl2.vercel.app/privacypolicy">https://jkl2.vercel.app/privacypolicy</a></strong>.&nbsp;By using the Site, you agree to be bound by our Privacy Policy, which is incorporated into these Terms of Use. Please be advised the Site is hosted in Germany. If you access the Site from any other region of the world with laws or other requirements governing personal data collection, use, or disclosure that differ from applicable laws in Germany, then through your continued use of the Site, you are transferring your data to Germany, and you agree to have your data transferred to and processed in Germany.</p>
+                        <p><strong><strong><strong>12.</strong>&nbsp;</strong>TERM AND TERMINATION</strong></p>
+                        <p>These Terms of Use shall remain in full force and effect while you use the Site. WITHOUT LIMITING ANY OTHER PROVISION OF THESE TERMS OF USE, WE RESERVE THE RIGHT TO, IN OUR SOLE DISCRETION AND WITHOUT NOTICE OR LIABILITY, DENY ACCESS TO AND USE OF THE SITE (INCLUDING BLOCKING CERTAIN IP ADDRESSES), TO ANY PERSON FOR ANY REASON OR FOR NO REASON, INCLUDING WITHOUT LIMITATION FOR BREACH OF ANY REPRESENTATION, WARRANTY, OR COVENANT CONTAINED IN THESE TERMS OF USE OR OF ANY APPLICABLE LAW OR REGULATION. WE MAY TERMINATE YOUR USE OR PARTICIPATION IN THE SITE OR DELETE YOUR ACCOUNT AND&nbsp;ANY CONTENT OR INFORMATION THAT YOU POSTED AT ANY TIME, WITHOUT WARNING, IN OUR SOLE DISCRETION.</p>
+                        <p>If we terminate or suspend your account for any reason, you are prohibited from registering and creating a new account under your name, a fake or borrowed name, or the name of any third party, even if you may be acting on behalf of the third party. In addition to terminating or suspending your account, we reserve the right to take appropriate legal action, including without limitation pursuing civil, criminal, and injunctive redress.</p>
+                        <p><strong><strong><strong>13.</strong>&nbsp;</strong>MODIFICATIONS AND INTERRUPTIONS</strong></p>
+                        <p>We reserve the right to change, modify, or remove the contents of the Site at any time or for any reason at our sole discretion without notice. However, we have no obligation to update any information on our Site. We also reserve the right to modify or discontinue all or part of the Site without notice at any time. We will not be liable to you or any third party for any modification, price change, suspension, or discontinuance of the Site.</p>
+                        <p>We cannot guarantee the Site will be available at all times. We may experience hardware, software, or other problems or need to perform maintenance related to the Site, resulting in interruptions, delays, or errors. We reserve the right to change, revise, update, suspend, discontinue, or otherwise modify the Site at any time or for any reason without notice to you. You agree that we have no liability whatsoever for any loss, damage, or inconvenience caused by your inability to access or use the Site during any downtime or discontinuance of the Site. Nothing in these Terms of Use will be construed to obligate us to maintain and support the Site or to supply any corrections, updates, or releases in connection therewith.</p>
+                        <p><strong><strong><strong>14.</strong>&nbsp;</strong>GOVERNING LAW</strong></p>
+                        <p>These conditions are governed by and interpreted following the laws of Germany, and the use of the United Nations Convention of Contracts for the International Sale of Goods is expressly excluded. If your habitual residence is in the EU, and you are a consumer, you additionally possess the protection provided to you by obligatory provisions of the law of your country of residence. Vladislav Klass and yourself both agree to submit to the non-exclusive jurisdiction of the courts of Bavaria, which means that you may make a claim to defend your consumer protection rights in regards to these Terms of Use in Germany, or in the EU country in which you reside.</p>
+                        <p><strong><strong><strong><strong>15.</strong></strong>&nbsp;</strong>DISPUTE RESOLUTION</strong></p>
+                        <p><strong>Informal Negotiations</strong></p>
+                        <p>To expedite resolution and control the cost of any dispute, controversy, or claim related to these Terms of Use (each "Dispute" and collectively, the “Disputes”) brought by either you or us (individually, a “Party” and collectively, the “Parties”), the Parties agree to first attempt to negotiate any Dispute (except those Disputes expressly provided below) informally for at least thirty (30) days before initiating arbitration. Such informal negotiations commence upon written notice from one Party to the other Party.</p>
+                        <p><strong>Binding Arbitration</strong></p>
+                        <p>Any dispute arising from the relationships between the Parties to this contract shall be determined by one arbitrator who will be chosen in accordance with the Arbitration and Internal Rules of the European Court of Arbitration being part of the European Centre of Arbitration having its seat in Strasbourg, and which are in force at the time the application for arbitration is filed, and of which adoption of this clause constitutes acceptance. The seat of arbitration shall be Munich, Germany.&nbsp;The language of the proceedings shall be German. Applicable rules of substantive law shall be the law of Germany.</p>
+                        <p><strong>Restrictions</strong></p>
+                        <p>The Parties agree that any arbitration shall be limited to the Dispute between the Parties individually. To the full extent permitted by law, (a) no arbitration shall be joined with any other proceeding; (b) there is no right or authority for any Dispute to be arbitrated on a class-action basis or to utilize class action procedures; and (c) there is no right or authority for any Dispute to be brought in a purported representative capacity on behalf of the general public or any other persons.</p>
+                        <p><strong>Exceptions to Informal Negotiations and Arbitration</strong></p>
+                        <p>The Parties agree that the following Disputes are not subject to the above provisions concerning informal negotiations and binding arbitration: (a) any Disputes seeking to enforce or protect, or concerning the validity of, any of the intellectual property rights of a Party; (b) any Dispute related to, or arising from, allegations of theft, piracy, invasion of privacy, or unauthorized use; and (c) any claim for injunctive relief. If this provision is found to be illegal or unenforceable, then neither Party will elect to arbitrate any Dispute falling within that portion of this provision found to be illegal or unenforceable and such Dispute shall be decided by a court of competent jurisdiction within the courts listed for jurisdiction above, and the Parties agree to submit to the personal jurisdiction of that court.</p>
+                        <p><strong><strong><strong>16.</strong>&nbsp;</strong>CORRECTIONS</strong></p>
+                        <p>There may be information on the Site that contains typographical errors, inaccuracies, or omissions, including descriptions, pricing, availability, and various other information. We reserve the right to correct any errors, inaccuracies, or omissions and to change or update the information on the Site at any time, without prior notice.</p>
+                        <p><strong><strong><strong>17.</strong>&nbsp;</strong>DISCLAIMER</strong></p>
+                        <p>THE SITE IS PROVIDED ON AN AS-IS AND AS-AVAILABLE BASIS. YOU AGREE THAT YOUR USE OF THE SITE AND OUR SERVICES WILL BE AT YOUR SOLE RISK. TO THE FULLEST EXTENT PERMITTED BY LAW, WE DISCLAIM ALL WARRANTIES, EXPRESS OR IMPLIED, IN CONNECTION WITH THE SITE AND YOUR USE THEREOF, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. WE MAKE NO WARRANTIES OR REPRESENTATIONS ABOUT THE ACCURACY OR COMPLETENESS OF THE SITE’S CONTENT OR THE CONTENT OF ANY WEBSITES LINKED TO THE SITE AND WE WILL ASSUME NO LIABILITY OR RESPONSIBILITY FOR ANY (1) ERRORS, MISTAKES, OR INACCURACIES OF CONTENT AND MATERIALS, (2) PERSONAL INJURY OR PROPERTY DAMAGE, OF ANY NATURE WHATSOEVER, RESULTING FROM YOUR ACCESS TO AND USE OF THE SITE, (3) ANY UNAUTHORIZED ACCESS TO OR USE OF OUR SECURE SERVERS AND/OR ANY AND ALL PERSONAL INFORMATION AND/OR FINANCIAL INFORMATION STORED THEREIN, (4) ANY INTERRUPTION OR CESSATION OF TRANSMISSION TO OR FROM THE SITE, (5) ANY BUGS, VIRUSES, TROJAN HORSES, OR THE LIKE WHICH MAY BE TRANSMITTED TO OR THROUGH THE SITE BY ANY THIRD PARTY, AND/OR (6) ANY ERRORS OR OMISSIONS IN ANY CONTENT AND MATERIALS OR FOR ANY LOSS OR DAMAGE OF ANY KIND INCURRED AS A RESULT OF THE USE OF ANY CONTENT POSTED, TRANSMITTED, OR OTHERWISE MADE AVAILABLE VIA THE SITE. WE DO NOT WARRANT, ENDORSE, GUARANTEE, OR ASSUME RESPONSIBILITY FOR ANY PRODUCT OR SERVICE ADVERTISED OR OFFERED BY A THIRD PARTY THROUGH THE SITE, ANY HYPERLINKED WEBSITE, OR ANY WEBSITE OR MOBILE APPLICATION FEATURED IN ANY BANNER OR OTHER ADVERTISING, AND WE WILL NOT BE A PARTY TO OR IN ANY WAY BE RESPONSIBLE FOR MONITORING ANY TRANSACTION BETWEEN YOU AND ANY THIRD-PARTY PROVIDERS OF PRODUCTS OR SERVICES. AS WITH THE PURCHASE OF A PRODUCT OR SERVICE THROUGH ANY MEDIUM OR IN ANY ENVIRONMENT, YOU SHOULD USE YOUR BEST JUDGMENT AND EXERCISE CAUTION WHERE APPROPRIATE.</p>
+                        <p><strong><strong><strong>18.</strong>&nbsp;</strong>LIMITATIONS OF LIABILITY</strong></p>
+                        <p>IN NO EVENT WILL WE OR OUR DIRECTORS, EMPLOYEES, OR AGENTS BE LIABLE TO YOU OR ANY THIRD PARTY FOR ANY DIRECT, INDIRECT, CONSEQUENTIAL, EXEMPLARY, INCIDENTAL, SPECIAL, OR PUNITIVE DAMAGES, INCLUDING LOST PROFIT, LOST REVENUE, LOSS OF DATA, OR OTHER DAMAGES ARISING FROM YOUR USE OF THE SITE, EVEN IF WE HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. NOTWITHSTANDING ANYTHING TO THE CONTRARY CONTAINED HEREIN, OUR LIABILITY TO YOU FOR ANY CAUSE WHATSOEVER AND REGARDLESS OF THE FORM OF THE ACTION, WILL AT ALL TIMES BE LIMITED TO THE AMOUNT PAID, IF ANY, BY YOU TO US&nbsp;DURING THE six (6) mONTH PERIOD PRIOR TO ANY CAUSE OF ACTION ARISING. CERTAIN US STATE LAWS AND INTERNATIONAL LAWS DO NOT ALLOW LIMITATIONS ON IMPLIED WARRANTIES OR THE EXCLUSION OR LIMITATION OF CERTAIN DAMAGES. IF THESE LAWS APPLY TO YOU, SOME OR ALL OF THE ABOVE DISCLAIMERS OR LIMITATIONS MAY NOT APPLY TO YOU, AND YOU MAY HAVE ADDITIONAL RIGHTS.</p>
+                        <p><strong><strong><strong>19.</strong>&nbsp;</strong>INDEMNIFICATION</strong></p>
+                        <p>You agree to defend, indemnify, and hold us harmless, including our subsidiaries, affiliates, and all of our respective officers, agents, partners, and employees, from and against any loss, damage, liability, claim, or demand, including reasonable attorneys’ fees and expenses, made by any third party due to or arising out of: (1) use of the Site; (2) breach of these Terms of Use; (3) any breach of your representations and warranties set forth in these Terms of Use; (4) your violation of the rights of a third party, including but not limited to intellectual property rights; or (5) any overt harmful act toward any other user of the Site with whom you connected via the Site. Notwithstanding the foregoing, we reserve the right, at your expense, to assume the exclusive defense and control of any matter for which you are required to indemnify us, and you agree to cooperate, at your expense, with our defense of such claims. We will use reasonable efforts to notify you of any such claim, action, or proceeding which is subject to this indemnification upon becoming aware of it.</p>
+                        <p><strong><strong><strong><strong>20.</strong>&nbsp;</strong></strong>USER DATA</strong></p>
+                        <p>We will maintain certain data that you transmit to the Site for the purpose of managing the performance of the Site, as well as data relating to your use of the Site. Although we perform regular routine backups of data, you are solely responsible for all data that you transmit or that relates to any activity you have undertaken using the Site. You agree that we shall have no liability to you for any loss or corruption of any such data, and you hereby waive any right of action against us arising from any such loss or corruption of such data.</p>
+                        <p><strong><strong><strong>21.</strong>&nbsp;</strong>ELECTRONIC COMMUNICATIONS, TRANSACTIONS, AND SIGNATURES</strong></p>
+                        <p>Visiting the Site, sending us emails, and completing online forms constitute electronic communications. You consent to receive electronic communications, and you agree that all agreements, notices, disclosures, and other communications we provide to you electronically, via email and on the Site, satisfy any legal requirement that such communication be in writing. YOU HEREBY AGREE TO THE USE OF ELECTRONIC SIGNATURES, CONTRACTS, ORDERS, AND OTHER RECORDS, AND TO ELECTRONIC DELIVERY OF NOTICES, POLICIES, AND RECORDS OF TRANSACTIONS INITIATED OR COMPLETED BY US OR VIA THE SITE. You hereby waive any rights or requirements under any statutes, regulations, rules, ordinances, or other laws in any jurisdiction which require an original signature or delivery or retention of non-electronic records, or to payments or the granting of credits by any means other than electronic means.</p>
+                        <p><strong><strong><strong>22.</strong>&nbsp;</strong>CALIFORNIA USERS AND RESIDENTS</strong></p>
+                        <p>If any complaint with us is not satisfactorily resolved, you can contact the Complaint Assistance Unit of the Division of Consumer Services of the California Department of Consumer Affairs in writing at 1625 North Market Blvd., Suite N 112, Sacramento, California 95834 or by telephone at (800) 952-5210 or (916) 445-1254.</p>
+                        <p><strong><strong><strong>23.</strong>&nbsp;</strong>MISCELLANEOUS</strong></p>
+                        <p>These Terms of Use and any policies or operating rules posted by us on the Site or in respect to the Site constitute the entire agreement and understanding between you and us. Our failure to exercise or enforce any right or provision of these Terms of Use shall not operate as a waiver of such right or provision. These Terms of Use operate to the fullest extent permissible by law. We may assign any or all of our rights and obligations to others at any time. We shall not be responsible or liable for any loss, damage, delay, or failure to act caused by any cause beyond our reasonable control. If any provision or part of a provision of these Terms of Use is determined to be unlawful, void, or unenforceable, that provision or part of the provision is deemed severable from these Terms of Use and does not affect the validity and enforceability of any remaining provisions. There is no joint venture, partnership, employment or agency relationship created between you and us as a result of these Terms of Use or use of the Site. You agree that these Terms of Use will not be construed against us by virtue of having drafted them. You hereby waive any and all defenses you may have based on the electronic form of these Terms of Use and the lack of signing by the parties hereto to execute these Terms of Use.</p>
+                        <p><strong><strong><strong>24.</strong>&nbsp;</strong>CONTACT US</strong></p>
+                        <p>In order to resolve a complaint regarding the Site or to receive further information regarding use of the Site, please contact us at:</p>
+                        <p><strong>Vladislav Klass</strong></p>
+                        <p><strong>Westendstr. 231</strong></p>
+                        <p><strong><strong>München, Bavaria</strong> <strong>80686</strong></strong></p>
+                        <p><strong><strong><strong>Germany</strong></strong></strong></p>
+                        <p><strong><strong>Phone:&nbsp;</strong><strong>+4917681727806</strong></strong></p>
+                        <p><strong><strong><strong>vladislavklass@web.de</strong></strong></strong></p>
+                        <p><strong>These terms of use were created using Termly's <a href="https://termly.io/products/terms-and-conditions-generator/">Terms and Conditions Generator</a>.</strong></p>
 
-return (
-  <div className="m-6">
-    <LoadingDots />
-  </div>
-);
+                    </div >
+                </div >
+            </div >
+        </>
+    );
+
+    return (
+        <div className="m-6">
+            <LoadingDots />
+        </div>
+    );
 };
 
 export default Terms;
