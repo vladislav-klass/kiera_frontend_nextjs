@@ -22,7 +22,7 @@ const PrivacyPolicy = () => {
             <p>In dieser Datenschutzerklärung informieren wir Sie über die Verarbeitung personenbezogener Daten bei der Nutzung dieser Website.</p>
             <p><strong>Verantwortlicher</strong></p>
             <p>Verantwortlich für die Datenverarbeitung ist<br></br>
-              <em>Vladislav Klass, Westendstr. 231, 01746502679, vladislavklass@web.de</em></p>
+              <em>Vladislav Klass, Tom Doerr, Westendstr. 231, 01746502679, info@kiera.ai</em></p>
             <p><strong>Personenbezogene Daten</strong></p>
             <p>Personenbezogene Daten sind alle Informationen, die sich auf eine identifizierte oder identifizierbare natürliche Person (im Folgenden "betroffene Person") beziehen. Als identifizierbar wird eine natürliche Person angesehen, die direkt oder indirekt, insbesondere mittels Zuordnung zu einer Kennung wie einem Namen, zu einer Kennnummer, zu Standortdaten, zu einer Online-Kennung oder zu einem oder mehreren besonderen Merkmalen identifiziert werden kann, die Ausdruck der physischen, physiologischen, genetischen, psychischen, wirtschaftlichen, kulturellen oder sozialen Identität dieser natürlichen Person sind.</p>
             <p><strong>Daten beim Websiteaufruf</strong></p>
